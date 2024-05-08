@@ -7,7 +7,6 @@ html {
 }
 
 body {
-  box-sizing: border-box;
   margin: 0px;
   font-size: 1rem;
   font-weight: 400;
@@ -17,91 +16,3 @@ body {
   font-family: Roboto, sans-serif;
   background-color: rgb(211, 211, 211);
 }
-
-.navbar {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-flow: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  background-color: rgb(248, 249, 250);
-  .roll-out-text {
-    box-sizing: border-box;
-    text-decoration: none;
-    background-color: transparent;
-    margin: 0px;
-    white-space: nowrap;
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    animation: 1s ease-out 0s 1 normal none running rollOut;
-    color: rgba(0, 0, 0, 0.9);
-  }
-  .navbarToggler {
-    display: none;
-  }
-  .navbarNav {
-    box-sizing: border-box;
-    margin-top: 0px;
-    list-style: none;
-    display: inline-block;
-    display: flex;
-    padding-left: 0px;
-    margin-bottom: 0px;
-    flex-direction: row;
-    .navItem {
-      box-sizing: border-box;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbarToggler {
-    display: block;
-    .navbarToggler {
-      box-sizing: border-box;
-      margin: 0px;
-      font-family: inherit;
-      overflow: visible;
-      text-transform: none;
-      appearance: button;
-      padding: 0.25rem 0.75rem;
-      border: 1px solid transparent;
-      border-radius: 0.25rem;
-      font-size: 1.25rem;
-      line-height: 1;
-      background-color: transparent;
-      cursor: pointer;
-
-      border-color: rgba(0, 0, 0, 0.1);
-      color: rgba(0, 0, 0, 0.5);
-      .navbarTogglerIcon {
-        box-sizing: border-box;
-        background: center center / 100% 100% no-repeat;
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        vertical-align: middle;
-        content: "";
-        background-image: url("images/icons/button.svg");
-      }
-    }
-  }
-  .collapse {
-    display: none;
-  }
-}
-// .collapse {
-//   box-sizing: border-box;
-//   flex-grow: 1;
-//   align-items: center;
-//   flex-basis: auto;
-//   display: flex;
-// }

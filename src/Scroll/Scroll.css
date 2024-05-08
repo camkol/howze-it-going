@@ -1,0 +1,19 @@
+#return-to-top {
+  color: rgb(0, 123, 255);
+  margin: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  border-radius: 35px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  display: inline;
+}
+#return-to-top i {
+  position: relative;
+  top: 13px;
+  right: -12px;
+}/*# sourceMappingURL=Scroll.css.map */

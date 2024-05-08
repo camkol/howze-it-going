@@ -1,0 +1,124 @@
+@keyframes rollOut {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navbar {
+  width: 100%;
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+
+  .roll-out-text {
+    text-decoration: none;
+
+    margin: 10px;
+    white-space: nowrap;
+    display: inline-block;
+
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    animation: 1s ease-out 0s 1 normal none running rollOut;
+    color: #fff;
+    h1 {
+      margin: 0px;
+    }
+  }
+  .navbarToggler {
+    display: none;
+  }
+  .navbarNav {
+    margin-top: 0px;
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    padding-left: 0px;
+    margin-bottom: 0px;
+
+    .navItem {
+      text-decoration: none;
+
+      .navLink {
+        text-decoration: none;
+        list-style: none;
+        margin: 10px;
+        white-space: nowrap;
+        display: inline-block;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    z-index: 10;
+    .collapse {
+      display: block;
+      position: relative;
+
+      .navbarToggler {
+        display: block;
+        appearance: button;
+        padding: 0.25rem 0.75rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        cursor: pointer;
+
+        border-color: rgba(0, 0, 0, 0.1);
+        color: #fff;
+      }
+      .navbarNav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        text-align: right;
+        .navLink {
+          h4 {
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  // .navbar {
+
+  //       .navbarTogglerIcon {
+  //         background: center center / 100% 100% no-repeat;
+  //         display: inline-block;
+  //         width: 1.5em;
+  //         height: 1.5em;
+  //         vertical-align: middle;
+  //         content: "";
+  //         background-image: url("../images/icons/button.svg");
+  //       }
+  //     }
+  //   }
+  //   .collapse {
+  //     display: none;
+  //   }
+  // .collapse {
+  //
+  //   flex-grow: 1;
+  //   align-items: center;
+  //   flex-basis: auto;
+  //   display: flex;
+  // }
+  // }
+}

@@ -1,0 +1,55 @@
+#megaTop {
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+  background-color: rgb(233, 236, 239);
+  align-items: center;
+  background-image: url("../images/back2.jpg");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  height: 400px;
+  background-position-y: -120px;
+  padding: 164px 0px;
+  display: block;
+  #coolAssTitle {
+    box-sizing: border-box;
+    line-height: 1.2;
+    margin: 0px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 68px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+#faceOfPort {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  background-color: rgb(238, 238, 238);
+  color: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.marquee {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100vw;
+  height: 12vh;
+  background-color: rgb(17, 17, 17);
+  color: rgb(238, 238, 238);
+  position: relative;
+}
+
+.marquee-content {
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  list-style: none;
+  animation: scrolling calc(17 * 3s) linear infinite;
+  height: 100%;
+  display: flex;
+}
