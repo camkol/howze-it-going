@@ -1,7 +1,7 @@
 import React from "react";
 import "./Scroll.css";
 
-export default function Component() {
+export default function Scroll() {
   return (
     <>
       <a id="return-to-top" href="/#">

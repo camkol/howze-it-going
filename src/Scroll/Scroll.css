@@ -1,5 +1,5 @@
 #return-to-top {
-  color: rgb(0, 123, 255);
+  color: rgb(187, 187, 187);
   margin: 0px;
   background: rgba(0, 0, 0, 0.7);
   text-decoration: none;
@@ -11,9 +11,21 @@
   height: 50px;
   z-index: 99;
   display: inline;
+  transition: all 0.3s ease;
 }
 #return-to-top i {
   position: relative;
   top: 13px;
-  right: -12px;
+  right: -15px;
+  transition: all 0.3s ease;
+  font-size: 19px;
+  margin: 0;
+  color: #fff;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
 }/*# sourceMappingURL=Scroll.css.map */

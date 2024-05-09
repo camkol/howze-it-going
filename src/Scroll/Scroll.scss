@@ -1,10 +1,12 @@
+$color_1: rgb(187, 187, 187);
+$color_2: #fff;
+
 #return-to-top {
-  color: rgb(0, 123, 255);
+  color: $color_1;
   margin: 0px;
   background: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   border-radius: 35px;
-
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -12,9 +14,21 @@
   height: 50px;
   z-index: 99;
   display: inline;
+  transition: all 0.3s ease;
   i {
     position: relative;
     top: 13px;
-    right: -12px;
+    right: -15px;
+    transition: all 0.3s ease;
+    font-size: 19px;
+    margin: 0;
+    color: $color_2;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.9);
+    i {
+      color: $color_2;
+      top: 5px;
+    }
   }
 }
