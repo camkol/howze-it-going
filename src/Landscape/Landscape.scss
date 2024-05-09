@@ -1,12 +1,35 @@
+$color_1: rgb(255, 255, 255);
+$color_2: rgb(17, 17, 17);
+$color_3: rgb(238, 238, 238);
+$color_4: #ffffff;
+$color_5: #4480ff;
+$color_6: #4caf50;
+$color_7: #f4b400;
+$color_8: #f44336;
+$font-family_1: Montserrat, sans-serif;
+$background-color_1: rgb(233, 236, 239);
+$background-color_2: rgb(238, 238, 238);
+$background-color_3: rgb(17, 17, 17);
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+    );
+  }
+}
 #megaTop {
   box-sizing: border-box;
   border-radius: 0.3rem;
   margin-bottom: 2rem;
-  background-color: rgb(233, 236, 239);
+  background-color: $background-color_1;
   align-items: center;
   background-image: url("../images/back2.jpg");
   background-size: cover;
-  color: rgb(255, 255, 255);
+  color: $color_1;
   height: 400px;
   background-position-y: -120px;
   padding: 164px 0px;
@@ -19,37 +42,119 @@
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 68px;
-    color: rgb(255, 255, 255);
+    color: $color_1;
   }
 }
-
+#coolAssTitle {
+  font-size: 68px;
+  color: $color_4;
+  span.text {
+    padding: 0;
+    padding-right: 4px;
+    border-right: 2px solid #ffffff;
+    animation: blink 0.75s infinite;
+    border-style: none;
+  }
+  .blue {
+    color: $color_5;
+  }
+  .green {
+    color: $color_6;
+  }
+  .yellow {
+    color: $color_7;
+  }
+  .red {
+    color: $color_8;
+  }
+}
 #faceOfPort {
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-  background-color: rgb(238, 238, 238);
-  color: rgb(17, 17, 17);
+  font-family: $font-family_1;
+  background-color: $background-color_2;
+  color: $color_2;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px;
 }
-
 .marquee {
   box-sizing: border-box;
   overflow: hidden;
-  width: 100vw;
-  height: 12vh;
-  background-color: rgb(17, 17, 17);
-  color: rgb(238, 238, 238);
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  background-color: $background-color_3;
+  color: $color_3;
   position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+  }
 }
-
 .marquee-content {
   box-sizing: border-box;
   margin-top: 0px;
   margin-bottom: 1rem;
   list-style: none;
-  animation: scrolling calc(17 * 3s) linear infinite;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
   height: 100%;
   display: flex;
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height) * 3 / 4);
+    white-space: nowrap;
+    img {
+      height: 65%;
+      width: auto;
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #coolAssTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  &:root {
+    --marquee-width: 100vw;
+    --marquee-height: 8vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee {
+    &:before {
+      font-size: 12px;
+      width: 5rem;
+    }
+    &:after {
+      width: 5rem;
+    }
+  }
+}
+@media (min-width: 100px) {
+  #faceOfPort {
+    padding: 0;
+  }
 }

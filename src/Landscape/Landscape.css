@@ -1,3 +1,14 @@
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+    );
+  }
+}
+
 #megaTop {
   box-sizing: border-box;
   border-radius: 0.3rem;
@@ -37,8 +48,8 @@
 .marquee {
   box-sizing: border-box;
   overflow: hidden;
-  width: 100vw;
-  height: 12vh;
+  width: var(--marquee-width);
+  height: var(--marquee-height);
   background-color: rgb(17, 17, 17);
   color: rgb(238, 238, 238);
   position: relative;
@@ -49,7 +60,96 @@
   margin-top: 0px;
   margin-bottom: 1rem;
   list-style: none;
-  animation: scrolling 51s linear infinite;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
   height: 100%;
   display: flex;
-}/*# sourceMappingURL=Landscape.css.map */
+}
+
+.marquee:before {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  left: 0;
+  background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  right: 0;
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height) * 3 / 4);
+  white-space: nowrap;
+}
+.marquee-content li img {
+  height: 65%;
+  width: auto;
+  border: none;
+}
+
+#coolAssTitle {
+  font-size: 68px;
+  color: #ffffff;
+}
+#coolAssTitle span.text {
+  padding: 0;
+  padding-right: 4px;
+  border-right: 2px solid #ffffff;
+  animation: blink 0.75s infinite;
+  border-style: none;
+}
+#coolAssTitle .blue {
+  color: #4480ff;
+}
+#coolAssTitle .green {
+  color: #4caf50;
+}
+#coolAssTitle .yellow {
+  color: #f4b400;
+}
+#coolAssTitle .red {
+  color: #f44336;
+}
+
+@media screen and (max-width: 670px) {
+  #coolAssTitle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 8vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before {
+    font-size: 12px;
+    width: 5rem;
+  }
+  .marquee:after {
+    width: 5rem;
+  }
+}
+
+@media (min-width: 100px) {
+  #faceOfPort {
+    padding: 0;
+  }
+}

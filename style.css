@@ -42,16 +42,7 @@
 /* .marquee-content:hover {
   animation-play-state: paused;
 } */
-@keyframes scrolling {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(
-      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
-    );
-  }
-}
+
 /*#faceOfPort {
     position: relative;
     bottom: 0;
@@ -117,25 +108,6 @@ nav {
 
 a {
   margin: 0;
-}
-
-.jumbotron {
-  display: flex;
-  align-items: center;
-  background-image: url("../images/back2.jpg");
-  background-size: cover;
-  color: #ffffff;
-  height: 400px;
-}
-.jumbotron h2 {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-  color: #fff;
-}
-.jumbotron h3 {
-  margin: 0 0 20px;
-  color: #fff;
 }
 
 #projects .titles {
@@ -578,105 +550,6 @@ canvas {
   margin-bottom: 0;
 }
 
-:root {
-  --marquee-width: 100vw;
-  --marquee-height: 12vh;
-  --marquee-elements-displayed: 5;
-  --marquee-element-width: calc(
-    var(--marquee-width) / var(--marquee-elements-displayed)
-  );
-  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
-}
-
-#faceOfPort {
-  font-family: "Montserrat", sans-serif;
-  background-color: #eee;
-  color: #111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.marquee {
-  width: var(--marquee-width);
-  height: var(--marquee-height);
-  background-color: #111;
-  color: #eee;
-  overflow: hidden;
-  position: relative;
-}
-.marquee:before {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-  left: 0;
-  background: linear-gradient(to right, #111 0%, transparent 100%);
-}
-.marquee:after {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-  right: 0;
-  background: linear-gradient(to left, #111 0%, transparent 100%);
-}
-
-.marquee-content {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  animation: scrolling var(--marquee-animation-duration) linear infinite;
-}
-.marquee-content li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: var(--marquee-element-width);
-  max-height: 100%;
-  font-size: calc(var(--marquee-height) * 3 / 4);
-  white-space: nowrap;
-}
-.marquee-content li img {
-  height: 65%;
-  width: auto;
-  border: none;
-}
-
-#coolAssTitle {
-  font-size: 68px;
-  color: #ffffff;
-}
-#coolAssTitle span.text {
-  padding: 0;
-  padding-right: 4px;
-  border-right: 2px solid #ffffff;
-  animation: blink 0.75s infinite;
-  border-style: none;
-}
-#coolAssTitle .blue {
-  color: #4480ff;
-}
-#coolAssTitle .green {
-  color: #4caf50;
-}
-#coolAssTitle .yellow {
-  color: #f4b400;
-}
-#coolAssTitle .red {
-  color: #f44336;
-}
-
-#megaTop {
-  display: block;
-  padding: 164px 0;
-}
-
 @media only screen and (max-width: 2560px) {
   .jumbotron {
     background-position-y: -200px;
@@ -703,11 +576,7 @@ canvas {
     width: 400px;
   }
 }
-@media screen and (max-width: 670px) {
-  #coolAssTitle {
-    font-size: 40px;
-  }
-}
+
 @media (min-width: 600px) {
   .accordion {
     max-width: 600px;
@@ -756,20 +625,7 @@ canvas {
     padding: 0;
   }
 }
-@media (max-width: 600px) {
-  :root {
-    --marquee-width: 100vw;
-    --marquee-height: 8vh;
-    --marquee-elements-displayed: 3;
-  }
-  .marquee:before {
-    font-size: 12px;
-    width: 5rem;
-  }
-  .marquee:after {
-    width: 5rem;
-  }
-}
+
 @media only screen and (min-width: 500px) {
   .card.presenter {
     transition: transform 0.3s ease-in-out;
@@ -816,8 +672,4 @@ canvas {
     width: 100%;
   }
 }
-@media (min-width: 100px) {
-  #faceOfPort {
-    padding: 0;
-  }
-} /*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
