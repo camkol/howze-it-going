@@ -29,6 +29,7 @@ $background-color_3: rgb(17, 17, 17);
   align-items: center;
   background-image: url("../images/back2.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color: $color_1;
   height: 400px;
   background-position-y: -120px;
@@ -77,6 +78,7 @@ $background-color_3: rgb(17, 17, 17);
   justify-content: center;
   align-items: center;
   padding: 0px;
+  width: 100%;
 }
 .marquee {
   box-sizing: border-box;
@@ -138,7 +140,7 @@ $background-color_3: rgb(17, 17, 17);
   }
 }
 @media (max-width: 600px) {
-  &:root {
+  :root {
     --marquee-width: 100vw;
     --marquee-height: 8vh;
     --marquee-elements-displayed: 3;

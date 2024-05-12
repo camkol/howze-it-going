@@ -1,5 +1,5 @@
-import React from "react";
-import Icon from "./Icon";
+import React, { useEffect } from "react";
+//import Icon from "./Icon";
 
 export default function Marquee() {
   const icons = [
@@ -30,15 +30,44 @@ export default function Marquee() {
     // "fab fa-android",
   ];
 
+  useEffect(() => {
+    const root = document.documentElement;
+    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
+      "--marquee-elements-displayed"
+    );
+    const marqueeContent = document.querySelector("ul.marquee-content");
+
+    root.style.setProperty(
+      "--marquee-elements",
+      marqueeContent.children.length
+    );
+
+    for (let i = 0; i < marqueeElementsDisplayed; i++) {
+      marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+    }
+  }, []);
+
   return (
     <div id="faceOfPort">
-      <div class="marquee">
-        <ul class="marquee-content">
+      <div className="marquee">
+        <ul className="marquee-content">
           {icons.map((icon, index) => (
             <Icon icon={icon} key={index} />
           ))}
         </ul>
       </div>
     </div>
+  );
+}
+
+function Icon({ icon, index }) {
+  return (
+    <li key={index}>
+      {icon.startsWith("images/") ? (
+        <img src={icon} alt="" />
+      ) : (
+        <i className={icon}></i>
+      )}
+    </li>
   );
 }

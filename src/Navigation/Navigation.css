@@ -6,6 +6,16 @@
     transform: translateX(0);
   }
 }
+:root {
+  --marquee-width: 100vw;
+  --marquee-height: 12vh;
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
 
 .navbar {
   width: 100%;

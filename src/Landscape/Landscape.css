@@ -3,12 +3,9 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
-    );
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
   }
 }
-
 #megaTop {
   box-sizing: border-box;
   border-radius: 0.3rem;
@@ -17,6 +14,7 @@
   align-items: center;
   background-image: url("../images/back2.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color: rgb(255, 255, 255);
   height: 400px;
   background-position-y: -120px;
@@ -32,75 +30,6 @@
   margin-bottom: 0px;
   font-size: 68px;
   color: rgb(255, 255, 255);
-}
-
-#faceOfPort {
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-  background-color: rgb(238, 238, 238);
-  color: rgb(17, 17, 17);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-}
-
-.marquee {
-  box-sizing: border-box;
-  overflow: hidden;
-  width: var(--marquee-width);
-  height: var(--marquee-height);
-  background-color: rgb(17, 17, 17);
-  color: rgb(238, 238, 238);
-  position: relative;
-}
-
-.marquee-content {
-  box-sizing: border-box;
-  margin-top: 0px;
-  margin-bottom: 1rem;
-  list-style: none;
-  animation: scrolling var(--marquee-animation-duration) linear infinite;
-  height: 100%;
-  display: flex;
-}
-
-.marquee:before {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-  left: 0;
-  background: linear-gradient(to right, #111 0%, transparent 100%);
-}
-
-.marquee:after {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-  right: 0;
-  background: linear-gradient(to left, #111 0%, transparent 100%);
-}
-
-.marquee-content li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: var(--marquee-element-width);
-  max-height: 100%;
-  font-size: calc(var(--marquee-height) * 3 / 4);
-  white-space: nowrap;
-}
-.marquee-content li img {
-  height: 65%;
-  width: auto;
-  border: none;
 }
 
 #coolAssTitle {
@@ -127,12 +56,78 @@
   color: #f44336;
 }
 
+#faceOfPort {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  background-color: rgb(238, 238, 238);
+  color: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.marquee {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  background-color: rgb(17, 17, 17);
+  color: rgb(238, 238, 238);
+  position: relative;
+}
+.marquee:before {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  left: 0;
+  background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  right: 0;
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+
+.marquee-content {
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  list-style: none;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+  height: 100%;
+  display: flex;
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height) * 3 / 4);
+  white-space: nowrap;
+}
+.marquee-content li img {
+  height: 65%;
+  width: auto;
+  border: none;
+}
+
 @media screen and (max-width: 670px) {
   #coolAssTitle {
     font-size: 40px;
   }
 }
-
 @media (max-width: 600px) {
   :root {
     --marquee-width: 100vw;
@@ -147,9 +142,8 @@
     width: 5rem;
   }
 }
-
 @media (min-width: 100px) {
   #faceOfPort {
     padding: 0;
   }
-}
+}/*# sourceMappingURL=Landscape.css.map */
