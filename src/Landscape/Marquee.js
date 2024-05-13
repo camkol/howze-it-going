@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-//import Icon from "./Icon";
+import Icon from "./Icon";
 
 export default function Marquee() {
   const icons = [
@@ -57,17 +57,5 @@ export default function Marquee() {
         </ul>
       </div>
     </div>
-  );
-}
-
-function Icon({ icon, index }) {
-  return (
-    <li key={index}>
-      {icon.startsWith("images/") ? (
-        <img src={icon} alt="" />
-      ) : (
-        <i className={icon}></i>
-      )}
-    </li>
   );
 }
