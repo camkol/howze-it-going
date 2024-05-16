@@ -6,6 +6,16 @@
     transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
   }
 }
+:root {
+  --marquee-width: 100vw;
+  --marquee-height: 12vh;
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
 #megaTop {
   box-sizing: border-box;
   border-radius: 0.3rem;
@@ -16,8 +26,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
-  height: 400px;
-  background-position-y: -120px;
+  height: 100vh;
   padding: 164px 0px;
   display: block;
 }
@@ -66,6 +75,8 @@
   align-items: center;
   padding: 0px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .marquee {

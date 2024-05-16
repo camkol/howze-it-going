@@ -1,8 +1,10 @@
 import React from "react";
+
 import "./App.css";
 import Navigation from "./Navigation";
 import Scroll from "./Scroll";
 import Landscape from "./Landscape";
+import Hamburger from "./Hamburger";
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Scroll />
       <Navigation />
       <Landscape />
+      <Hamburger />
     </>
   );
 }

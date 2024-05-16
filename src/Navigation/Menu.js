@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import List from "./List";
 
 export default function Menu() {
-  const [open, setOpen] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(!open);
-  };
+  function handleCheckboxChange() {
+    setIsChecked(!isChecked);
+  }
 
   const navigationItems = [
     { label: "Projects", href: "#projects" },
@@ -17,18 +17,24 @@ export default function Menu() {
   ];
   return (
     <div id="navbarSupportedContent" className="collapse navbar-collapse">
-      <button
-        className="navbarToggler"
-        aria-label="Toggle navigation"
-        onClick={handleOpen}
-      >
-        Menu
-      </button>{" "}
-      <ul className={"navbarNav " + (open ? "show" : "")}>
-        {navigationItems.map((item, index) => (
-          <List item={item} key={index} />
-        ))}
-      </ul>
+      <input
+        type="checkbox"
+        id="navi-toggle"
+        className="checkbox"
+        checked={isChecked}
+        onChange={handleCheckboxChange}
+      />
+      <label for="navi-toggle" className="button">
+        <span className="icon">&nbsp;</span>
+      </label>
+      <div className="background-HB">&nbsp;</div>
+      <nav className={`nav ${isChecked ? "open" : ""}`}>
+        <ul className="list">
+          {navigationItems.map((item, index) => (
+            <List item={item} key={index} />
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 }
