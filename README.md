@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [View](https://accordion-component2.netlify.app/)
+- Live Site URL: [View](https://howzeitgoing.netlify.app/)
 
 ## My process
 
