@@ -4,6 +4,7 @@ import "./App.css";
 import Navigation from "./Navigation";
 import Scroll from "./Scroll";
 import Landscape from "./Landscape";
+import Projects from "./Projects";
 // import Hamburger from "./Hamburger";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navigation />
       <Landscape />
       {/* <Hamburger /> */}
+      <Projects />
     </>
   );
 }

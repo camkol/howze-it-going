@@ -6,6 +6,16 @@
     transform: translateX(0);
   }
 }
+.roll-out-text {
+  animation: rollOut 1s ease-out;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
 
 .navbar {
   width: 100%;

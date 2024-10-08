@@ -4,7 +4,8 @@ import Icon from "./Icon";
 export default function Marquee() {
   const icons = [
     "fab fa-react",
-    "fab fa-redux",
+    "images/icons/redux(front).png",
+
     "fab fa-js",
     "fab fa-node",
     "images/icons/mocha(front).png",

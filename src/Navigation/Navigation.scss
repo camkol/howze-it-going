@@ -11,7 +11,17 @@ $border-color_1: rgba(0, 0, 0, 0.1);
   }
 }
 
+.roll-out-text {
+  animation: rollOut 1s ease-out;
+}
+
 /*# sourceMappingURL=Navigation.css.map */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
 .navbar {
   width: 100%;
   position: absolute;

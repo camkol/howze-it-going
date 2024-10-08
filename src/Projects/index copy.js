@@ -1,32 +1,419 @@
 import React from "react";
-import Project from "./Project";
 
 export default function Projects() {
   return (
     <>
-      <section id="projects" className="container">
+      <section
+        id="projects"
+        className="container"
+        style={{
+          boxSizing: "border-box",
+          display: "block",
+          width: "100%",
+          paddingRight: "15px",
+          paddingLeft: "15px",
+          marginRight: "auto",
+          marginLeft: "auto",
+          maxWidth: "1140px",
+        }}
+      >
         <div style={{ boxSizing: "border-box" }}>
-          <h2 className="titles">Projects</h2>
+          <h2
+            className="titles"
+            style={{
+              boxSizing: "border-box",
+              marginTop: "0px",
+              marginBottom: "0.5rem",
+              fontWeight: 500,
+              lineHeight: 1.2,
+              fontSize: "2rem",
+              fontFamily: '"Protest Revolution", sans-serif',
+            }}
+          >
+            Projects
+          </h2>
         </div>
-        <div id="projectGrid">
-          <div className="scrollport">
-            <Project />
-            <div className="card presenter">
-              <div className="card-body presser">
-                <div id="chris" className="imager">
+        <div
+          id="projectGrid"
+          style={{
+            boxSizing: "border-box",
+            placeContent: "center",
+            display: "grid",
+          }}
+        >
+          <div
+            className="scrollport"
+            style={{
+              boxSizing: "border-box",
+              gap: "-.25rem",
+              padding: "var(--size-0)",
+              overflowX: "auto",
+              overscrollBehaviorX: "contain",
+              display: "flex",
+              alignItems: "start",
+            }}
+          >
+            <div
+              className="card presenter"
+              style={{
+                boxSizing: "border-box",
+                border: "1px solid rgba(0, 0, 0, 0.125)",
+                position: "relative",
+                display: "flex",
+                flexDirection: "column",
+                overflowWrap: "break-word",
+                backgroundColor: "rgb(255, 255, 255)",
+                backgroundClip: "border-box",
+                borderRadius: "1rem",
+                blockSize: "20rem",
+                aspectRatio: "1",
+                boxShadow:
+                  "0 -2px 5px 0 hsl(220 3% 15%/calc(1% + 2%)),0 1px 1px -2px hsl(220 3% 15%/calc(1% + 3%)),0 2px 2px -2px hsl(220 3% 15%/calc(1% + 3%)),0 5px 5px -2px hsl(220 3% 15%/calc(1% + 4%)),0 9px 9px -2px hsl(220 3% 15%/calc(1% + 5%)),0 16px 16px -2px hsl(220 3% 15%/calc(1% + 6%))",
+                transition: "transform 0.3s ease-in-out 0s",
+                margin: "20px",
+                minWidth: "20rem",
+              }}
+            >
+              <div
+                className="card-body presser"
+                style={{
+                  boxSizing: "border-box",
+                  flex: "1 1 auto",
+                  padding: "1.25rem",
+                  cursor: "pointer",
+                }}
+              >
+                <div
+                  id="xysTinyFind"
+                  className="imager"
+                  style={{
+                    boxSizing: "border-box",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}
+                >
+                  <img
+                    className="imagist"
+                    src="http://127.0.0.1:5500/camkol.github.io/images/projects/xyline.jpg"
+                    style={{
+                      boxSizing: "border-box",
+                      borderStyle: "none",
+                      verticalAlign: "middle",
+                      transition: "filter 0.3s ease 0s",
+                      borderRadius: "20px",
+                      width: "100%",
+                      display: "block",
+                    }}
+                  />
+                </div>
+                <hr
+                  style={{
+                    overflow: "visible",
+                    boxSizing: "content-box",
+                    height: "0px",
+                    borderWidth: "1px 0px 0px",
+                    borderImage: "initial",
+                    marginTop: "1rem",
+                    marginBottom: "1rem",
+                    borderRightStyle: "initial",
+                    borderBottomStyle: "initial",
+                    borderLeftStyle: "initial",
+                    borderRightColor: "initial",
+                    borderBottomColor: "initial",
+                    borderLeftColor: "initial",
+                    borderTopStyle: "solid",
+                    borderTopColor: "rgba(0, 0, 0, 0.1)",
+                  }}
+                />
+                <h5
+                  className="card-title"
+                  style={{
+                    boxSizing: "border-box",
+                    marginTop: "0px",
+                    fontWeight: 500,
+                    lineHeight: 1.2,
+                    fontSize: "1.25rem",
+                    marginBottom: "0.75rem",
+                  }}
+                >
+                  Xystinyfind
+                </h5>
+                <p
+                  className="progStyle card-subtitle mb-2 text-muted"
+                  style={{
+                    boxSizing: "border-box",
+                    marginTop: "-0.375rem",
+                    fontSize: "0.75rem",
+                    marginBottom: "0.5rem",
+                    color: "rgb(108, 117, 125)",
+                  }}
+                >
+                  <span
+                    className="jqSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(8, 104, 172) 0%, rgb(8, 70, 114) 70%)",
+                    }}
+                  >
+                    jQuery
+                  </span>
+                  <span
+                    className="jsSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(218, 190, 36) 0%, rgb(240, 219, 79) 70%)",
+                    }}
+                  >
+                    JavaScript
+                  </span>
+                  <span
+                    className="htmlSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(228, 77, 38) 0%, rgb(241, 101, 41) 70%)",
+                    }}
+                  >
+                    HTML
+                  </span>
+                  <span
+                    className="bsSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(143, 19, 254) 0%, rgb(106, 16, 243) 70%)",
+                    }}
+                  >
+                    Bootstrap
+                  </span>
+                  <span
+                    className="cssSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(38, 77, 228) 0%, rgb(41, 101, 241) 70%)",
+                    }}
+                  >
+                    CSS
+                  </span>
+                  <span
+                    className="sassSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(207, 100, 154) 0%, rgb(236, 123, 181) 70%)",
+                    }}
+                  >
+                    SASS
+                  </span>
+                  <span
+                    className="psSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(0, 200, 255) 0%, rgb(0, 29, 38) 70%)",
+                    }}
+                  >
+                    Photoshop
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div
+              className="card presenter"
+              style={{
+                boxSizing: "border-box",
+                border: "1px solid rgba(0, 0, 0, 0.125)",
+                position: "relative",
+                display: "flex",
+                flexDirection: "column",
+                overflowWrap: "break-word",
+                backgroundColor: "rgb(255, 255, 255)",
+                backgroundClip: "border-box",
+                borderRadius: "1rem",
+                blockSize: "20rem",
+                aspectRatio: "1",
+                boxShadow:
+                  "0 -2px 5px 0 hsl(220 3% 15%/calc(1% + 2%)),0 1px 1px -2px hsl(220 3% 15%/calc(1% + 3%)),0 2px 2px -2px hsl(220 3% 15%/calc(1% + 3%)),0 5px 5px -2px hsl(220 3% 15%/calc(1% + 4%)),0 9px 9px -2px hsl(220 3% 15%/calc(1% + 5%)),0 16px 16px -2px hsl(220 3% 15%/calc(1% + 6%))",
+                transition: "transform 0.3s ease-in-out 0s",
+                margin: "20px",
+                minWidth: "20rem",
+              }}
+            >
+              <div
+                className="card-body presser"
+                style={{
+                  boxSizing: "border-box",
+                  flex: "1 1 auto",
+                  padding: "1.25rem",
+                  cursor: "pointer",
+                }}
+              >
+                <div
+                  id="chris"
+                  className="imager"
+                  style={{
+                    boxSizing: "border-box",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}
+                >
                   <img
                     className="imagist"
                     src="http://127.0.0.1:5500/camkol.github.io/images/projects/level.jpg"
+                    style={{
+                      boxSizing: "border-box",
+                      borderStyle: "none",
+                      verticalAlign: "middle",
+                      transition: "filter 0.3s ease 0s",
+                      borderRadius: "20px",
+                      width: "100%",
+                      display: "block",
+                    }}
                   />
                 </div>
-                <hr />
-                <h5 className="card-title">Chris the Producer</h5>
-                <p className="progStyle card-subtitle mb-2 text-muted">
-                  <span className="reactSpan">React</span>
-                  <span className="jsSpan">JavaScript</span>
-                  <span className="htmlSpan">HTML</span>
-                  <span className="cssSpan">CSS</span>
-                  <span className="sassSpan">SASS</span>
+                <hr
+                  style={{
+                    overflow: "visible",
+                    boxSizing: "content-box",
+                    height: "0px",
+                    borderWidth: "1px 0px 0px",
+                    borderImage: "initial",
+                    marginTop: "1rem",
+                    marginBottom: "1rem",
+                    borderRightStyle: "initial",
+                    borderBottomStyle: "initial",
+                    borderLeftStyle: "initial",
+                    borderRightColor: "initial",
+                    borderBottomColor: "initial",
+                    borderLeftColor: "initial",
+                    borderTopStyle: "solid",
+                    borderTopColor: "rgba(0, 0, 0, 0.1)",
+                  }}
+                />
+                <h5
+                  className="card-title"
+                  style={{
+                    boxSizing: "border-box",
+                    marginTop: "0px",
+                    fontWeight: 500,
+                    lineHeight: 1.2,
+                    fontSize: "1.25rem",
+                    marginBottom: "0.75rem",
+                  }}
+                >
+                  Chris the Producer
+                </h5>
+                <p
+                  className="progStyle card-subtitle mb-2 text-muted"
+                  style={{
+                    boxSizing: "border-box",
+                    marginTop: "-0.375rem",
+                    fontSize: "0.75rem",
+                    marginBottom: "0.5rem",
+                    color: "rgb(108, 117, 125)",
+                  }}
+                >
+                  <span
+                    className="reactSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(78, 176, 202) 0%, rgb(97, 218, 251) 70%)",
+                    }}
+                  >
+                    React
+                  </span>
+                  <span
+                    className="jsSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(218, 190, 36) 0%, rgb(240, 219, 79) 70%)",
+                    }}
+                  >
+                    JavaScript
+                  </span>
+                  <span
+                    className="htmlSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(228, 77, 38) 0%, rgb(241, 101, 41) 70%)",
+                    }}
+                  >
+                    HTML
+                  </span>
+                  <span
+                    className="cssSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(38, 77, 228) 0%, rgb(41, 101, 241) 70%)",
+                    }}
+                  >
+                    CSS
+                  </span>
+                  <span
+                    className="sassSpan"
+                    style={{
+                      boxSizing: "border-box",
+                      borderRadius: "8px",
+                      padding: "0.3rem",
+                      margin: "0.15rem",
+                      color: "white",
+                      background:
+                        "radial-gradient(rgb(207, 100, 154) 0%, rgb(236, 123, 181) 70%)",
+                    }}
+                  >
+                    SASS
+                  </span>
                 </p>
               </div>
             </div>
