@@ -11,6 +11,14 @@
 }
 
 
+header {
+  position: absolute;
+}
+header .row {
+  display: flex;
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;

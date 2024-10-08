@@ -16,6 +16,14 @@ $border-color_1: rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=Navigation.css.map */
+header {
+  // padding: 20px 0;
+  position: absolute;
+  .row {
+    display: flex;
+    align-items: center;
+  }
+}
 nav {
   display: flex;
   justify-content: flex-end;

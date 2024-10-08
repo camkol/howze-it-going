@@ -78,14 +78,6 @@ body {
   background-color: #d3d3d3;
 }
 
-header {
-  padding: 20px 0;
-}
-header .row {
-  display: flex;
-  align-items: center;
-}
-
 footer {
   font-size: 12px;
   padding: 20px 0;
@@ -109,29 +101,6 @@ h1 {
 
 a {
   margin: 0;
-}
-
-.jumbotron {
-  display: flex;
-  align-items: center;
-  background-image: url("../images/back2.jpg");
-  background-size: cover;
-  color: #ffffff;
-  height: 400px;
-}
-.jumbotron h2 {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-  color: #fff;
-}
-.jumbotron h3 {
-  margin: 0 0 20px;
-  color: #fff;
-}
-
-#projects .titles {
-  font-family: "Protest Revolution", sans-serif;
 }
 
 #education .titles {
@@ -207,6 +176,9 @@ figure img {
 .progStyle .reactSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #4eb0ca 0%, #61dafb 70%);
 }
+.progStyle .reduxSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #8800ff 0%, #300177 70%);
+}
 .progStyle .jsSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #dabe24 0%, #f0db4f 70%);
 }
@@ -252,21 +224,6 @@ canvas {
   width: 5px;
 }
 
-.imagist {
-  width: 100%;
-  display: block;
-  transition: filter 0.3s ease;
-  border-radius: 20px;
-}
-.imagist:hover {
-  filter: brightness(70%);
-}
-
-.imager {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .mobile {
   display: none;
 }
@@ -300,30 +257,6 @@ canvas {
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
-}
-
-.scrollport {
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  display: flex;
-  gap: var(--size-00);
-  align-items: start;
-  padding: var(--size-0);
-}
-.scrollport > .presenter {
-  block-size: var(--size-14);
-  aspect-ratio: var(--ratio-square);
-  border-radius: var(--radius-3);
-  box-shadow: var(--shadow-4);
-}
-
-.container #projectGrid {
-  display: grid;
-  place-content: center;
-  padding: 20;
-}
-.container #projectGrid .scrollport .card {
-  min-width: 20rem;
 }
 
 .views {

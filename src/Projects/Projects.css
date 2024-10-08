@@ -1,3 +1,45 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
-@import "https://fonts.googleapis.com/css?family=Montserrat";/*# sourceMappingURL=Projects.css.map */
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+#projects .titles {
+  font-family: "Protest Revolution", sans-serif;
+}
+
+.imagist {
+  width: 100%;
+  display: block;
+  transition: filter 0.3s ease;
+  border-radius: 20px;
+}
+.imagist:hover {
+  filter: brightness(70%);
+}
+
+.imager {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scrollport {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  display: flex;
+  gap: var(--size-00);
+  align-items: start;
+  padding: var(--size-0);
+}
+.scrollport > .presenter {
+  block-size: var(--size-14);
+  aspect-ratio: var(--ratio-square);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-4);
+}
+
+.container #projectGrid {
+  display: grid;
+  place-content: center;
+  padding: 20;
+}
+.container #projectGrid .scrollport .card {
+  min-width: 20rem;
+}/*# sourceMappingURL=Projects.css.map */
