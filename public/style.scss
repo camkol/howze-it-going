@@ -291,36 +291,6 @@ canvas {
 .mobile {
   display: none;
 }
-#return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
-  width: 50px;
-  height: 50px;
-  display: block;
-  text-decoration: none;
-  border-radius: 35px;
-  display: none;
-  transition: all 0.3s ease;
-  i {
-    color: $color_2;
-    margin: 0;
-    position: relative;
-    top: 13px;
-    right: -12px;
-    font-size: 19px;
-    transition: all 0.3s ease;
-  }
-  &:hover {
-    background: rgba(0, 0, 0, 0.9);
-    i {
-      color: $color_2;
-      top: 5px;
-    }
-  }
-}
 
 .views {
   display: none;
@@ -548,15 +518,7 @@ canvas {
     }
   }
 }
-:root {
-  --marquee-width: 100vw;
-  --marquee-height: 12vh;
-  --marquee-elements-displayed: 5;
-  --marquee-element-width: calc(
-    var(--marquee-width) / var(--marquee-elements-displayed)
-  );
-  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
-}
+
 #faceOfPort {
   font-family: $font-family_5;
   background-color: $background-color_5;
@@ -743,7 +705,7 @@ canvas {
 @media only screen and (min-width: 500px) {
   .card.presenter {
     transition: transform 0.3s ease-in-out;
-    margin: 20px;
+    margin: auto;
     &:hover {
       transform: scale(1.1);
     }

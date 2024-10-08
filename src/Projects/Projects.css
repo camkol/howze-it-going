@@ -23,7 +23,6 @@
 .scrollport {
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  display: flex;
   gap: var(--size-00);
   align-items: start;
   padding: var(--size-0);
@@ -35,11 +34,15 @@
   box-shadow: var(--shadow-4);
 }
 
-.container #projectGrid {
-  display: grid;
-  place-content: center;
-  padding: 20;
+#projectGrid {
+  display: flex;
 }
-.container #projectGrid .scrollport .card {
-  min-width: 20rem;
+#projectGrid .scrollport {
+  width: 30%;
+}
+#projectGrid .scrollport .card {
+  width: 90%;
+}
+#projectGrid .preview {
+  width: 70%;
 }/*# sourceMappingURL=Projects.css.map */

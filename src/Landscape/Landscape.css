@@ -1,3 +1,6 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
 @keyframes scrolling {
   0% {
     transform: translateX(0);
@@ -21,30 +24,30 @@
   align-items: center;
   background-image: url("../../public/images/back2.jpg");
   background-size: cover;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   height: 400px;
 }
 .jumbotron h2 {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  color: rgb(17, 17, 17);
+  color: #fff;
 }
 .jumbotron h3 {
   margin: 0 0 20px;
-  color: rgb(17, 17, 17);
+  color: #fff;
 }
 
 #megaTop {
   box-sizing: border-box;
   border-radius: 0.3rem;
   margin-bottom: 2rem;
-  background-color: rgb(17, 17, 17);
+  background-color: #111;
   align-items: center;
   background-image: url("../../public/images/back2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   height: 100vh;
   padding: 164px 0px;
   display: block;
@@ -57,12 +60,12 @@
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 68px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 #coolAssTitle {
   font-size: 68px;
-  color: #ffffff;
+  color: white;
 }
 #coolAssTitle span.text {
   padding: 0;
@@ -72,23 +75,23 @@
   border-style: none;
 }
 #coolAssTitle .blue {
-  color: #4480ff;
+  color: rgba(255, 255, 255, 0.8);
 }
 #coolAssTitle .green {
-  color: #4caf50;
+  color: #111;
 }
 #coolAssTitle .yellow {
-  color: #f4b400;
+  color: #eee;
 }
 #coolAssTitle .red {
-  color: #f44336;
+  color: #4480ff;
 }
 
 #faceOfPort {
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-  background-color: rgb(238, 238, 238);
-  color: rgb(17, 17, 17);
+  font-family: Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,8 +106,8 @@
   overflow: hidden;
   width: var(--marquee-width);
   height: var(--marquee-height);
-  background-color: rgb(17, 17, 17);
-  color: rgb(238, 238, 238);
+  background-color: #111;
+  color: #fff;
   position: relative;
 }
 .marquee:before {

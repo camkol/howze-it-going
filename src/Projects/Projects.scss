@@ -49,7 +49,7 @@ $border-color_1: transparent #447fff #447fff transparent;
 .scrollport {
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  display: flex;
+
   gap: var(--size-00);
   align-items: start;
   padding: var(--size-0);
@@ -60,15 +60,18 @@ $border-color_1: transparent #447fff #447fff transparent;
     box-shadow: var(--shadow-4);
   }
 }
-.container {
-  #projectGrid {
-    display: grid;
-    place-content: center;
-    padding: 20;
-    .scrollport {
-      .card {
-        min-width: 20rem;
-      }
+
+#projectGrid {
+  display: flex;
+  // place-content: center;
+
+  .scrollport {
+    width: 30%;
+    .card {
+      width: 90%;
     }
+  }
+  .preview {
+    width: 70%;
   }
 }
