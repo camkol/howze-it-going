@@ -46,27 +46,25 @@ $border-color_1: transparent #447fff #447fff transparent;
   background-size: cover;
 }
 
-.scrollport {
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
-  display: flex;
-  gap: var(--size-00);
-  justify-content: start;
-  padding: var(--size-0);
-  > .presenter {
-    block-size: var(--size-14);
-    aspect-ratio: var(--ratio-square);
-    border-radius: var(--radius-3);
-    box-shadow: var(--shadow-4);
-  }
-}
-
 #projectGrid {
   display: flex;
   // place-content: center;
+  justify-content: center;
+  height: 100%;
 
   .scrollport {
+    overflow: scroll;
+
+    gap: var(--size-00);
+    position: relative;
+    padding: var(--size-0);
     width: 30rem;
+    > .presenter {
+      block-size: var(--size-14);
+      aspect-ratio: var(--ratio-square);
+      border-radius: var(--radius-3);
+      box-shadow: var(--shadow-4);
+    }
     .card {
       width: 90%;
       height: 20rem;
@@ -86,10 +84,12 @@ $border-color_1: transparent #447fff #447fff transparent;
       }
     }
   }
-  .preview {
-    width: 70%;
-  }
 }
+
+.preview {
+  width: 70%;
+}
+
 @media only screen and (min-width: 500px) {
   .card.presenter {
     transition: transform 0.3s ease-in-out;

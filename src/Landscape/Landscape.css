@@ -41,7 +41,6 @@
 #megaTop {
   box-sizing: border-box;
   border-radius: 0.3rem;
-  margin-bottom: 2rem;
   background-color: #111;
   align-items: center;
   background-image: url("../../public/images/back2.jpg");

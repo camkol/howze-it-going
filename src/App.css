@@ -3,4 +3,9 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 section {
   height: 100vh;
+}
+
+.titles {
+  font-size: 2rem;
+  margin: 1rem;
 }/*# sourceMappingURL=App.css.map */

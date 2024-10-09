@@ -1,26 +1,19 @@
 export default function Preview() {
   return (
-    <div
-      id="enlargeXystinyfindModal"
-      className="modal fade"
-      aria-hidden="true"
-      aria-labelledby="enlargeXystinyfindModalLabel"
-      tabIndex="-1"
-    >
-      <div className="modal-dialog modal-dialog-centered modal-lg">
-        <div className="modal-content">
-          <div className="modal-header">
-            <img src="/images/projects/xyline-site.JPG" />
-            <button className="btn-close" type="button" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div className="modal-body">
+    <div className="previewer">
+      <div className="previewer-dialog">
+        <div className="previewer-content">
+          <div className="previewer-links">
+            <div className="previewer-image">
+              <img src="/images/projects/xyline-site.JPG" alt="xyline" />
+            </div>
+            <hr />
             <h5>
               <a
                 className="card-link"
                 href="https://github.com/camkol/xystinyfind.git"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 GitHub
               </a>
@@ -31,11 +24,14 @@ export default function Preview() {
                 className="card-link"
                 href="https://camkol.github.io/xystinyfind/"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 View Page
               </a>
             </h4>
-            <hr />
+          </div>
+
+          <div className="previewer-process">
             <h4>Process</h4>
             <ul>
               <li>

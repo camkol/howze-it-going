@@ -7,11 +7,10 @@ export default function Projects() {
   return (
     <>
       <section id="projects" className="container">
-        <div>
-          <h2 className="titles">Projects</h2>
-        </div>
         <div id="projectGrid">
           <div className="scrollport">
+            {" "}
+            <h2 className="titles">Projects</h2>
             <Project />
             <Project />
             <Project />

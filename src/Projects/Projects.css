@@ -20,26 +20,23 @@
   background-size: cover;
 }
 
-.scrollport {
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
+#projectGrid {
   display: flex;
-  gap: var(--size-00);
-  justify-content: start;
-  padding: var(--size-0);
+  justify-content: center;
+  height: 100%;
 }
-.scrollport > .presenter {
+#projectGrid .scrollport {
+  overflow: scroll;
+  gap: var(--size-00);
+  position: relative;
+  padding: var(--size-0);
+  width: 30rem;
+}
+#projectGrid .scrollport > .presenter {
   block-size: var(--size-14);
   aspect-ratio: var(--ratio-square);
   border-radius: var(--radius-3);
   box-shadow: var(--shadow-4);
-}
-
-#projectGrid {
-  display: flex;
-}
-#projectGrid .scrollport {
-  width: 30rem;
 }
 #projectGrid .scrollport .card {
   width: 90%;
@@ -59,7 +56,8 @@
   width: auto;
   margin: auto;
 }
-#projectGrid .preview {
+
+.preview {
   width: 70%;
 }
 
