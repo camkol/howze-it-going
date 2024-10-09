@@ -21,10 +21,11 @@
 }
 
 .scrollport {
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  display: flex;
   gap: var(--size-00);
-  align-items: start;
+  justify-content: start;
   padding: var(--size-0);
 }
 .scrollport > .presenter {
@@ -38,11 +39,42 @@
   display: flex;
 }
 #projectGrid .scrollport {
-  width: 30%;
+  width: 30rem;
 }
 #projectGrid .scrollport .card {
   width: 90%;
+  height: 20rem;
+  margin: 1rem auto;
+  background-color: #ffffff;
+}
+#projectGrid .scrollport .card .card-body {
+  padding: 1rem;
+}
+#projectGrid .scrollport .card .card-body .imager {
+  height: 10rem;
+  margin: auto;
+}
+#projectGrid .scrollport .card .card-body .imager img {
+  height: 100%;
+  width: auto;
+  margin: auto;
 }
 #projectGrid .preview {
   width: 70%;
+}
+
+@media only screen and (min-width: 500px) {
+  .card.presenter {
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+  }
+  .card.presenter:hover {
+    transform: scale(1.1);
+  }
+  #profilePic {
+    border-radius: 50px;
+  }
+  footer {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=Projects.css.map */

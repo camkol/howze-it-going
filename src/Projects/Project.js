@@ -10,6 +10,7 @@ export default function Project() {
           />
         </div>
         <hr />
+        <h5 className="card-title">Xystinyfind</h5>
         <p className="progStyle card-subtitle mb-2 text-muted">
           <span className="jqSpan">jQuery</span>
           <span className="jsSpan">JavaScript</span>

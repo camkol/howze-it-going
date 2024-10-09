@@ -78,6 +78,10 @@ body {
   background-color: #d3d3d3;
 }
 
+hr {
+  margin-block: 1rem;
+}
+
 footer {
   font-size: 12px;
   padding: 20px 0;
@@ -160,6 +164,8 @@ figure img {
 
 .progStyle {
   font-size: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .progStyle span {
   border-radius: 8px;
@@ -643,21 +649,6 @@ canvas {
   }
   .marquee:after {
     width: 5rem;
-  }
-}
-@media only screen and (min-width: 500px) {
-  .card.presenter {
-    transition: transform 0.3s ease-in-out;
-    margin: auto;
-  }
-  .card.presenter:hover {
-    transform: scale(1.1);
-  }
-  #profilePic {
-    border-radius: 50px;
-  }
-  footer {
-    margin-top: 50px;
   }
 }
 @media screen and (max-width: 500px) {

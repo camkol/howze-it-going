@@ -47,11 +47,11 @@ $border-color_1: transparent #447fff #447fff transparent;
 }
 
 .scrollport {
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  display: flex;
   gap: var(--size-00);
-  align-items: start;
+  justify-content: start;
   padding: var(--size-0);
   > .presenter {
     block-size: var(--size-14);
@@ -66,12 +66,42 @@ $border-color_1: transparent #447fff #447fff transparent;
   // place-content: center;
 
   .scrollport {
-    width: 30%;
+    width: 30rem;
     .card {
       width: 90%;
+      height: 20rem;
+      margin: 1rem auto;
+      background-color: $background-color_2;
+      .card-body {
+        padding: 1rem;
+        .imager {
+          height: 10rem;
+          margin: auto;
+          img {
+            height: 100%;
+            width: auto;
+            margin: auto;
+          }
+        }
+      }
     }
   }
   .preview {
     width: 70%;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .card.presenter {
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  #profilePic {
+    border-radius: 50px;
+  }
+  footer {
+    margin-top: 50px;
   }
 }

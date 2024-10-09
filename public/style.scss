@@ -105,6 +105,10 @@ body {
   background-color: $background-color_1;
 }
 
+hr {
+  margin-block: 1rem;
+}
+
 footer {
   font-size: 12px;
   padding: 20px 0;
@@ -180,6 +184,8 @@ figure {
 }
 .progStyle {
   font-size: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
   span {
     border-radius: 8px;
     padding: 0.3rem;
@@ -702,21 +708,7 @@ canvas {
     }
   }
 }
-@media only screen and (min-width: 500px) {
-  .card.presenter {
-    transition: transform 0.3s ease-in-out;
-    margin: auto;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-  #profilePic {
-    border-radius: 50px;
-  }
-  footer {
-    margin-top: 50px;
-  }
-}
+
 @media screen and (max-width: 500px) {
   #coolAssTitle {
     font-size: 32px;
