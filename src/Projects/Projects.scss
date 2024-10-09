@@ -58,7 +58,7 @@ $border-color_1: transparent #447fff #447fff transparent;
     gap: var(--size-00);
     position: relative;
     padding: var(--size-0);
-    width: 30rem;
+    width: 35%;
     > .presenter {
       block-size: var(--size-14);
       aspect-ratio: var(--ratio-square);
@@ -87,7 +87,29 @@ $border-color_1: transparent #447fff #447fff transparent;
 }
 
 .preview {
-  width: 70%;
+  width: 65%;
+  .previewer {
+    width: 100%;
+    .previewer-image {
+      height: 20rem;
+      img {
+        height: 100%;
+        margin: auto;
+      }
+    }
+    .previewer-content {
+      display: flex;
+      .previewer-dialog {
+        width: 30%;
+        .previewer-links {
+          padding: 0 1rem;
+        }
+      }
+      .previewer-process {
+        width: 70%;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 500px) {
@@ -97,11 +119,5 @@ $border-color_1: transparent #447fff #447fff transparent;
     &:hover {
       transform: scale(1.1);
     }
-  }
-  #profilePic {
-    border-radius: 50px;
-  }
-  footer {
-    margin-top: 50px;
   }
 }

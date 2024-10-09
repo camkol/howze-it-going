@@ -30,7 +30,7 @@
   gap: var(--size-00);
   position: relative;
   padding: var(--size-0);
-  width: 30rem;
+  width: 35%;
 }
 #projectGrid .scrollport > .presenter {
   block-size: var(--size-14);
@@ -58,6 +58,28 @@
 }
 
 .preview {
+  width: 65%;
+}
+.preview .previewer {
+  width: 100%;
+}
+.preview .previewer .previewer-image {
+  height: 20rem;
+}
+.preview .previewer .previewer-image img {
+  height: 100%;
+  margin: auto;
+}
+.preview .previewer .previewer-content {
+  display: flex;
+}
+.preview .previewer .previewer-content .previewer-dialog {
+  width: 30%;
+}
+.preview .previewer .previewer-content .previewer-dialog .previewer-links {
+  padding: 0 1rem;
+}
+.preview .previewer .previewer-content .previewer-process {
   width: 70%;
 }
 
@@ -68,11 +90,5 @@
   }
   .card.presenter:hover {
     transform: scale(1.1);
-  }
-  #profilePic {
-    border-radius: 50px;
-  }
-  footer {
-    margin-top: 50px;
   }
 }/*# sourceMappingURL=Projects.css.map */

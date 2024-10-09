@@ -82,7 +82,12 @@ hr {
   margin-block: 1rem;
 }
 
+#profilePic {
+  border-radius: 50px;
+}
+
 footer {
+  margin-top: 50px;
   font-size: 12px;
   padding: 20px 0;
 }
