@@ -387,7 +387,7 @@ const AnimatedCanvas = ({
   }, [display, shape, color]);
 
   return (
-    <div>
+    <div className="canvas">
       <canvas ref={canvasRef} id="myCanvas"></canvas>
     </div>
   );

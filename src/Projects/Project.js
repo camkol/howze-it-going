@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Project({ project }) {
+export default function Project({ project, onSelectProject }) {
   // Initialize state with the project's image source
   const [imageSrc, setImageSrc] = useState(project.projectImage);
 
@@ -81,7 +81,10 @@ export default function Project({ project }) {
   };
 
   return (
-    <div className="card presenter">
+    <div
+      className="card presenter"
+      onClick={() => onSelectProject(project.name)}
+    >
       <div className="card-body presser">
         <div id={project.name} className="imager">
           <img

@@ -1,8 +1,8 @@
-export default function Preview() {
+export default function Preview({ project }) {
   return (
     <div className="previewer">
       <div className="previewer-image">
-        <img src="/images/projects/xyline-site.JPG" alt="xyline" />
+        <img src={project.screenImage} alt={project.name} />
       </div>
       <hr />
       <div className="previewer-content">
@@ -11,7 +11,7 @@ export default function Preview() {
             <h5>
               <a
                 className="card-link"
-                href="https://github.com/camkol/xystinyfind.git"
+                href={project.gitHub}
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -22,7 +22,7 @@ export default function Preview() {
             <h4>
               <a
                 className="card-link"
-                href="https://camkol.github.io/xystinyfind/"
+                href={project.site}
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -34,19 +34,9 @@ export default function Preview() {
         <div className="previewer-process">
           <h4>Process</h4>
           <ul>
-            <li>
-              {"I undertook the development for a close friend's company."}
-            </li>
-            <li>{`Striving for consistency, I emulated the design of their old
-website, then enhance upon request.`}</li>
-            <li>
-              {"Bootstrap was incorporated to enhance structural elements."}
-            </li>
-            <li>{`A JavaScript-based slideshow was implemented for visual
-appeal.`}</li>
-            <li>{`Leveraging my Photoshop skills, I converted images to JPG
-format to enhance accessibility and reduce file sizes,
-subsequently improving load times.`}</li>
+            {project.process.map((process, index) => (
+              <li key={index}>{process}</li>
+            ))}
           </ul>
         </div>
       </div>
