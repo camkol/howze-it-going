@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import Project from "./Project";
 import Preview from "./Preview";
+import library from "../library";
 
 export default function Projects() {
   return (
@@ -11,12 +12,12 @@ export default function Projects() {
           <div className="scrollport">
             {" "}
             <h2 className="titles">Projects</h2>
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            {library.map(
+              (project) =>
+                project.star ? (
+                  <Project project={project} key={project.name} />
+                ) : null // If `star` is false or undefined, don't render anything
+            )}
           </div>{" "}
           <div className="preview">
             <Preview />

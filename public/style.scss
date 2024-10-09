@@ -100,7 +100,7 @@ $border-color_1: transparent #447fff #447fff transparent;
     }
   }
 }
-body {
+.root {
   font-family: $font-family_1;
   background-color: $background-color_1;
 }
@@ -184,94 +184,7 @@ figure {
 .hide {
   display: none;
 }
-.progStyle {
-  font-size: 0.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  span {
-    border-radius: 8px;
-    padding: 0.3rem;
-    margin: 0.15rem;
-    color: $color_4;
-  }
-  .htmlSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #e44d26 0%,
-      #f16529 70%
-    );
-  }
-  .cssSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #264de4 0%,
-      #2965f1 70%
-    );
-  }
-  .reactSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #4eb0ca 0%,
-      #61dafb 70%
-    );
-  }
-  .reduxSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #8800ff 0%,
-      #300177 70%
-    );
-  }
-  .jsSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #dabe24 0%,
-      #f0db4f 70%
-    );
-  }
-  .jqSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #0868ac 0%,
-      #084672 70%
-    );
-  }
-  .bsSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #8f13fe 0%,
-      #6a10f3 70%
-    );
-  }
-  .sassSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #cf649a 0%,
-      #ec7bb5 70%
-    );
-  }
-  .bulmaSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #35efd2 0%,
-      #00d1b2 70%
-    );
-  }
-  .psSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #00c8ff 0%,
-      #001d26 70%
-    );
-  }
-  .dsSpan {
-    background: radial-gradient(
-      ellipse farthest-corner at center center,
-      #39a5cc 0%,
-      #36687f 70%
-    );
-  }
-}
+
 .logo {
   display: flex;
   img {
