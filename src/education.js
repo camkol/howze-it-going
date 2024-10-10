@@ -1,14 +1,104 @@
 const education = {
   Codecademy: {
-    duration: "2022-Present",
-    certifications: [
+    year: "2022-Present",
+    courses: [
       {
-        title: "Learn React",
-        topics: [
+        courseName: "Learn Redux",
+        certificate: true,
+        lessons: [
+          "Core Concepts in Redux",
+          "Core Redux API",
+          "Redux Toolkit",
+          "Async Actions with Middleware and Thunks",
+        ],
+      },
+      {
+        courseName: "Learn Advanced React",
+        certificate: true,
+        lessons: [
+          "Welcome to Learn Advanced React!",
+          "Advanced React: Custom Hooks",
+          "Advanced React: Context",
+          "Advanced React: Error Boundaries",
+          "Advanced React: Optimization",
+          "Next Steps",
+        ],
+      },
+      {
+        courseName: "Learn React Router v6",
+        certificate: true,
+        lessons: [
+          "Welcome to Learn React Router v6",
+          "Reacter Router", // Overlap with v5
+          "Next Steps",
+        ],
+      },
+      {
+        courseName: "Learn React Router v5",
+        certificate: true,
+        lessons: ["Reacter Router"], // Overlap with v6
+      },
+      {
+        courseName: "Learn React Testing",
+        certificate: true,
+        lessons: ["Jest", "React Testing Library"],
+      },
+      {
+        courseName: "Create a Front-End App with React",
+        certificate: true,
+        modules: {
+          "1. Introduction to JavaScript and Building Apps": [
+            "JavaScript Introduction & React Overview",
+            "Setting up a Web Development Environment",
+          ],
+          "2. JavaScript Functions, Arrays, and Loops": [
+            "Conditionals",
+            "Functions",
+            "Arrays",
+            "Loops",
+          ],
+          "3. JavaScript Iterators, Objects, and Classes": [
+            "Iterators",
+            "Objects",
+            "Classes",
+          ],
+          "4. Modern JavaScript: Modules and Browser Compatibility": [
+            "ES6 Modules",
+            "Browser Compatibility and Transpilation",
+          ],
+          "5. Introduction to React": [
+            "JSX",
+            "React Components",
+            "Ravenous: Part 1",
+          ],
+          "6. React: Components Interacting": [
+            "Components and Props",
+            "Ravenous: Part 2",
+          ],
+          "7. React: Component State": [
+            "Hooks",
+            "React Programming Patterns",
+            "Ravenous: Part 3",
+          ],
+          "8. AJAX Requests and API Interactions": [
+            "HTTP Requests",
+            "Ravenous: Part 4",
+          ],
+          "9. React Capstone": [
+            "React Styles",
+            "Lifecycle Methods",
+            "React Forms",
+            "Jamming",
+          ],
+        },
+      },
+      {
+        courseName: "Learn React",
+        certificate: true,
+        lessons: [
           "JSX",
           "Components and Advanced JSX",
           "Components Interacting",
-          "Props",
           "Hooks",
           "React Programming Patterns",
           "React Styles",
@@ -16,16 +106,32 @@ const education = {
         ],
       },
       {
-        title: "Learn JavaScript Unit Testing",
-        topics: [
+        courseName: "Learn JavaScript Unit Testing",
+        certificate: true,
+        lessons: [
           "Why Test?",
           "Write Good Tests With Mocha",
           "Learn Test-Driven Development With Mocha",
         ],
       },
       {
-        title: "Learn Node.js",
-        topics: [
+        courseName: "Learn PHP Skill Path",
+        certificate: true,
+        modules: {
+          "1. Introduction": [],
+          "2. PHP Variables, Strings, and Numbers": [],
+          "3. PHP Functions": [],
+          "4. PHP Conditionals and Logic": [],
+          "5. PHP Arrays and Loops": [],
+          "6. PHP and HTML": ["Form Handling", "Form Validation"],
+          "7. PHP Classes and Objects": [],
+          "8. Next Steps": [],
+        },
+      },
+      {
+        courseName: "Learn Node.js",
+        certificate: true,
+        lessons: [
           "Welcome to Learn Node.js",
           "What is Back-End?",
           "Introduction to Node.js",
@@ -35,17 +141,9 @@ const education = {
         ],
       },
       {
-        title: "Learn the Command Line",
-        topics: [
-          "Navigating the File System",
-          "Viewing and Changing the File System",
-          "Redirecting Input and Output",
-          "Configuring the Environment",
-        ],
-      },
-      {
-        title: "Learn Git & GitHub",
-        topics: [
+        courseName: "Learn Git & GitHub",
+        certificate: true,
+        lessons: [
           "Introduction: Git & GitHub",
           "Basic Git Workflow",
           "Important Git Operations",
@@ -57,11 +155,23 @@ const education = {
           "Best Practices for GitHub Repositories",
           "Collaborating with the GitHub Community",
           "GitHub Features: Issues, CLI, & Actions",
+          "Review: Learn Git & GitHub",
         ],
       },
       {
-        title: "Learn jQuery",
-        topics: [
+        courseName: "Learn the Command Line",
+        certificate: true,
+        lessons: [
+          "Navigating the File System",
+          "Viewing and Changing the File System",
+          "Redirecting Input and Output",
+          "Configuring the Environment",
+        ],
+      },
+      {
+        courseName: "Learn jQuery",
+        certificate: true,
+        lessons: [
           "Introduction",
           "Effects",
           "Event Handlers",
@@ -70,8 +180,23 @@ const education = {
         ],
       },
       {
-        title: "Learn JavaScript",
-        topics: [
+        courseName: "Learn the Basics of Regular Expressions",
+        certificate: true,
+        lessons: ["Introduction to Regular Expressions"],
+      },
+      {
+        courseName: "Building Interactive JavaScript Websites",
+        certificate: true,
+        lessons: [
+          "JavaScript Interactive Websites",
+          "DOM Events with JavaScript",
+          "Templating with Handlebars",
+        ],
+      },
+      {
+        courseName: "Learn JavaScript",
+        certificate: true,
+        lessons: [
           "Introduction",
           "Conditionals",
           "Functions",
@@ -83,53 +208,61 @@ const education = {
         ],
       },
       {
-        title: "Building Interactive JavaScript Websites",
-        topics: [
-          "JavaScript Interactive Websites",
-          "DOM Events with JavaScript",
-          "Templating with Handlebars",
+        courseName: "Learn Bootstrap",
+        certificate: true,
+        lessons: ["Grid", "Utilities", "Components"],
+      },
+      {
+        courseName: "Learn Sass",
+        certificate: true,
+        lessons: [
+          "Create a Sass Stylesheet",
+          "Mixins and the & Selector",
+          "Functions and Operations",
+          "Sustainable SCSS",
         ],
       },
       {
-        title: "Learn Intermediate JavaScript",
-        topics: [
-          "Classes",
-          "Modules",
-          "Promises",
-          "Async-Await",
-          "Requests",
-          "Errors and Error Handling",
-          "JavaScript Under the Hood",
-          "JavaScript Best Practices",
-        ],
+        courseName: "Learn Navigation Design",
+        certificate: true,
+        lessons: ["Links and Buttons", "Secondary Navigation"],
       },
       {
-        title: "Learn PHP Skill Path",
-        topics: [
-          "Introduction to the Learn PHP Skill Path",
-          "PHP Variables, Strings, and Numbers",
-          "PHP Functions",
-          "PHP Conditionals and Logic",
-          "PHP Arrays and Loops",
-          "PHP and HTML",
-          "PHP Classes and Objects",
-          "Learn PHP Next Steps",
-        ],
+        courseName: "Build a Website with HTML, CSS, and GitHub Pages",
+        certificate: true,
+        modules: {
+          "1. Beginner HTML": ["Elements and Structure", "Tables"],
+          "2. Beginner CSS": ["Visual Rules"],
+          "3. How to Build Websites on Your Own Computer": [
+            "Command Line for Building Websites",
+          ],
+          "4. Intermediate CSS: Colors and Typography": [
+            "Colors",
+            "Typography",
+          ],
+          "5. Intermediate CSS: Layout and Positioning": [
+            "The Box Model",
+            "Display and Positioning",
+          ],
+          "6. Responsive Design and Accessibility": [
+            "Learn Responsive Design",
+            "Web Accessibility",
+            "CSS Documentation and Debugging",
+          ],
+          "7. Advanced CSS: Flexbox and CSS Transitions": [
+            "Layout with Flexbox",
+            "CSS Transitions",
+          ],
+          "8. Finishing Touches and Publishing a Website": [
+            "Finishing Touches",
+            "Git and Publishing to GitHub Pages",
+          ],
+        },
       },
       {
-        title: "Learn CSS",
-        topics: [
-          "Syntax and Selectors",
-          "Visual Rules",
-          "The Box Model",
-          "Display and Positioning",
-          "Colors",
-          "Typography",
-        ],
-      },
-      {
-        title: "Learn Intermediate CSS",
-        topics: [
+        courseName: "Learn Intermediate CSS",
+        certificate: true,
+        lessons: [
           "Layout with Flexbox",
           "Grid",
           "Transitions",
@@ -141,43 +274,21 @@ const education = {
         ],
       },
       {
-        title: "Learn Navigation Design",
-        topics: ["Links and Buttons", "Secondary Navigation"],
-      },
-      {
-        title: "Learn Bootstrap",
-        topics: ["Grid", "Utilities", "Components"],
-      },
-      {
-        title: "Learn Sass",
-        topics: [
-          "Create a Sass Stylesheet",
-          "Mixins and the & Selector",
-          "Functions and Operations",
-          "Sustainable SCSS",
+        courseName: "Learn CSS",
+        certificate: true,
+        lessons: [
+          "Syntax and Selectors",
+          "Visual Rules",
+          "The Box Model",
+          "Display and Positioning",
+          "Colors",
+          "Typography",
         ],
       },
       {
-        title: "Learn the Basics of Regular Expressions",
-        topics: ["Introduction to Regular Expressions"],
-      },
-      {
-        title: "Build a Website with HTML, CSS, and GitHub Pages",
-        topics: [
-          "Beginner HTML",
-          "Beginner CSS",
-          "How to Build Websites on Your Own Computer",
-          "Intermediate CSS: Colors and Typography",
-          "Intermediate CSS: Layout and Positioning",
-          "Responsive Design and Accessibility",
-          "Advanced CSS: Flexbox and CSS Transitions",
-          "Finishing Touches and Publishing a Website",
-          "Learn How to Build Websites Capstone Project",
-        ],
-      },
-      {
-        title: "Learn HTML",
-        topics: [
+        courseName: "Learn HTML",
+        certificate: true,
+        lessons: [
           "Introduction to Web Development",
           "Elements and Structure",
           "Tables",
@@ -186,21 +297,27 @@ const education = {
         ],
       },
       {
-        title: "Learn How to Code",
-        topics: [
-          "Basics of Programming I",
-          "Basics of Programming II",
-          "Basics of Programming III",
-        ],
+        courseName: "Learn How to Code",
+        certificate: true,
+        modules: {
+          "1. Basics of Programming I": [
+            "Variables",
+            "Data Types",
+            "Operators",
+          ],
+          "2. Basics of Programming II": ["Functions", "Control Flow"],
+          "3. Basics of Programming III": ["Lists", "Loops"],
+        },
       },
     ],
   },
   freeCodeCamp: {
-    duration: "2023-Present",
-    certifications: [
+    year: "2023-Present",
+    courses: [
       {
-        title: "JavaScript Algorithms and Data Structures",
-        topics: [
+        courseName: "JavaScript Algorithms and Data Structures",
+        certificate: true,
+        lessons: [
           "Basic JavaScript",
           "ES6",
           "Regular Expressions",
@@ -213,17 +330,18 @@ const education = {
         ],
       },
       {
-        title: "Responsive Web Design",
-        topics: ["HTML", "CSS"],
+        courseName: "Responsive Web Design",
+        certificate: true,
+        lessons: ["HTML", "CSS"],
       },
     ],
   },
-  udemy: {
-    duration: "2023-Present",
+  Udemy: {
+    year: "2023-Present",
     courses: [
       {
-        title: "The Web Developer Bootcamp",
-        topics: [
+        courseName: "The Web Developer Bootcamp (in progress)",
+        lessons: [
           "ReactJS",
           "Unix (Command Line) Commands",
           "JavaScript",
@@ -240,13 +358,13 @@ const education = {
       },
     ],
   },
-  "ITT Technical Institute": {
-    duration: "2002-2008",
+  ITT_Technical_Institute: {
+    year: "2002-2008",
     degrees: [
       {
-        title:
-          "Associates of Applied Science Degree in Computer Drafting and Design",
-        topics: [
+        degreeName:
+          "Associates of Applied Science in Computer Drafting and Design",
+        courses: [
           "Dynamics in an Information Society",
           "Computers in Technology",
           "Problem Solving",
@@ -255,56 +373,20 @@ const education = {
           "College Mathematics I",
           "Architectural Drafting I",
           "Rapid Visualization",
-          "College Mathematics II",
-          "Engineering Graphics I",
-          "Materials and Processes",
-          "Physics",
-          "Architectural Drafting II",
-          "Descriptive Geometry",
-          "Composition I",
-          "Engineering Graphics II",
-          "Digital Information Management",
-          "Composition II",
-          "Civil Drafting and Introduction to GIS",
-          "Basic Design Theory and Methods",
-          "Physical and Computer-Aided 3D Modeling",
-          "Design and Drafting Capstone Project",
-          "Economic Problems",
-          "Professional Procedures and Portfolio",
         ],
       },
       {
-        title:
-          "Bachelor of Science Degree in Digital Entertainment and Game Design",
-        topics: [
+        degreeName:
+          "Bachelor of Science in Digital Entertainment and Game Design",
+        courses: [
           "Introduction to Computer Programming",
           "Animation I",
           "Audio/Video Techniques",
           "Introduction to Gaming Technology",
           "Managing Game Development",
           "Research Methods",
-          "Physics of Animation",
-          "Game Design Process",
-          "Game Design Strategies",
-          "Advanced Animation",
-          "Written Analysis",
-          "Game Interface Design",
-          "Level Design I",
-          "Creative Writing and Storyboarding",
-          "Game Engines and Production",
-          "The Game Development Team",
-          "Ethics",
-          "Environmental Issues",
-          "Level Design II",
-          "Statistics",
-          "Economics and Change",
-          "Capstone Project",
-          "Modern and Contemporary Art",
-          "Contemporary World Culture",
         ],
       },
     ],
   },
 };
-
-export default education;
