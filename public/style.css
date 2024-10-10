@@ -112,10 +112,6 @@ a {
   margin: 0;
 }
 
-#education .titles {
-  font-family: "Permanent Marker", cursive;
-}
-
 #experience .titles {
   font-family: "Anton", sans-serif;
 }
@@ -434,96 +430,11 @@ canvas {
   align-items: center;
 }
 
-.marquee {
-  width: var(--marquee-width);
-  height: var(--marquee-height);
-  background-color: #111;
-  color: #eee;
-  overflow: hidden;
-  position: relative;
-}
-.marquee:before {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-  left: 0;
-  background: linear-gradient(to right, #111 0%, transparent 100%);
-}
-.marquee:after {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
-  right: 0;
-  background: linear-gradient(to left, #111 0%, transparent 100%);
-}
-
-.marquee-content {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  animation: scrolling var(--marquee-animation-duration) linear infinite;
-}
-.marquee-content li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: var(--marquee-element-width);
-  max-height: 100%;
-  font-size: calc(var(--marquee-height) * 3 / 4);
-  white-space: nowrap;
-}
-.marquee-content li img {
-  height: 65%;
-  width: auto;
-  border: none;
-}
-
-#coolAssTitle {
-  font-size: 68px;
-  color: #ffffff;
-}
-#coolAssTitle span.text {
-  padding: 0;
-  padding-right: 4px;
-  border-right: 2px solid #ffffff;
-  animation: blink 0.75s infinite;
-  border-style: none;
-}
-#coolAssTitle .blue {
-  color: #4480ff;
-}
-#coolAssTitle .green {
-  color: #4caf50;
-}
-#coolAssTitle .yellow {
-  color: #f4b400;
-}
-#coolAssTitle .red {
-  color: #f44336;
-}
-
 #megaTop {
   display: block;
   padding: 164px 0;
 }
 
-@media only screen and (max-width: 2560px) {
-  .jumbotron {
-    background-position-y: -200px;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .jumbotron {
-    background-position-y: -120px;
-  }
-}
 @media (min-width: 1000px) {
   .grid-image img {
     width: 600px;
@@ -538,11 +449,6 @@ canvas {
 @media (min-width: 700px) {
   .grid-image img {
     width: 400px;
-  }
-}
-@media screen and (max-width: 670px) {
-  #coolAssTitle {
-    font-size: 40px;
   }
 }
 @media (min-width: 600px) {

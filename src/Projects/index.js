@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import Project from "./Project";
-import Preview from "./Preview";
+import ProjectPreview from "./ProjectPreview";
 import library from "../library";
 // import AnimatedCanvas from "../AnimatedCanvas";
 
@@ -34,9 +34,9 @@ export default function Projects() {
                 ) : null // If `star` is false or undefined, don't render anything
             )}
           </div>{" "}
-          <div className="preview">
+          <div className="projectpreview">
             {!selectedProject && <div></div>}
-            {selectedProject && <Preview project={selectedProject} />}
+            {selectedProject && <ProjectPreview project={selectedProject} />}
           </div>
         </div>
       </section>

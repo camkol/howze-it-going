@@ -57,31 +57,31 @@
   margin: auto;
 }
 
-.preview {
+.projectpreview {
   width: 65%;
 }
-.preview .previewer {
+.projectpreview .previewer {
   width: 100%;
   height: 100%;
   overflow: scroll;
 }
-.preview .previewer .previewer-image {
+.projectpreview .previewer .previewer-image {
   height: 20rem;
 }
-.preview .previewer .previewer-image img {
+.projectpreview .previewer .previewer-image img {
   height: 100%;
   margin: auto;
 }
-.preview .previewer .previewer-content {
+.projectpreview .previewer .previewer-content {
   display: flex;
 }
-.preview .previewer .previewer-content .previewer-dialog {
+.projectpreview .previewer .previewer-content .previewer-dialog {
   width: 30%;
 }
-.preview .previewer .previewer-content .previewer-dialog .previewer-links {
+.projectpreview .previewer .previewer-content .previewer-dialog .previewer-links {
   padding: 0 1rem;
 }
-.preview .previewer .previewer-content .previewer-process {
+.projectpreview .previewer .previewer-content .previewer-process {
   width: 70%;
 }
 

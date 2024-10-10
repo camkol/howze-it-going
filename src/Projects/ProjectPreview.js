@@ -1,4 +1,4 @@
-export default function Preview({ project }) {
+export default function ProjectPreview({ project }) {
   return (
     <div className="previewer">
       <div className="previewer-image">

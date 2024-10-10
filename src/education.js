@@ -1,6 +1,7 @@
 const education = {
   Codecademy: {
     year: "2022-Present",
+    image: "images/education/Codecademy.svg.png",
     courses: [
       {
         courseName: "Learn Redux",
@@ -364,6 +365,7 @@ const education = {
   },
   freeCodeCamp: {
     year: "2023-Present",
+    image: "images/education/FreeCodeCamp_logo.svg.png",
     courses: [
       {
         courseName: "JavaScript Algorithms and Data Structures",
@@ -389,6 +391,7 @@ const education = {
   },
   Udemy: {
     year: "2023-Present",
+    image: "images/education/Udemy_logo.svg.png",
     courses: [
       {
         courseName: "The Web Developer Bootcamp (in progress)",
@@ -411,6 +414,7 @@ const education = {
   },
   ITT_Technical_Institute: {
     year: "2002-2008",
+    image: "images/education/ITTTech.png",
     degrees: [
       {
         degreeName:
@@ -441,3 +445,5 @@ const education = {
     ],
   },
 };
+
+export default education;

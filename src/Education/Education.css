@@ -1,0 +1,6 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+#education .titles {
+  font-family: "Permanent Marker", cursive;
+}/*# sourceMappingURL=Education.css.map */
