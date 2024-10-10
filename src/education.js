@@ -4,7 +4,8 @@ const education = {
     courses: [
       {
         courseName: "Learn Redux",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/7bec2ab40c4dcf741cd2ff8d50a35e2d",
         lessons: [
           "Core Concepts in Redux",
           "Core Redux API",
@@ -14,7 +15,8 @@ const education = {
       },
       {
         courseName: "Learn Advanced React",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/13ffe064f6504262a9e9e3cf76be9bf3",
         lessons: [
           "Welcome to Learn Advanced React!",
           "Advanced React: Custom Hooks",
@@ -26,7 +28,8 @@ const education = {
       },
       {
         courseName: "Learn React Router v6",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/15b32ebcd95f164740d02275674fc5ee",
         lessons: [
           "Welcome to Learn React Router v6",
           "Reacter Router", // Overlap with v5
@@ -35,17 +38,20 @@ const education = {
       },
       {
         courseName: "Learn React Router v5",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/c2db3d16bb894a5c94090fa99fbca4be",
         lessons: ["Reacter Router"], // Overlap with v6
       },
       {
         courseName: "Learn React Testing",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/1790781f3857d258b06a24f3c53424cd",
         lessons: ["Jest", "React Testing Library"],
       },
       {
         courseName: "Create a Front-End App with React",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/5c9ce0b45f1de879ebcad4fd",
         modules: {
           "1. Introduction to JavaScript and Building Apps": [
             "JavaScript Introduction & React Overview",
@@ -94,7 +100,8 @@ const education = {
       },
       {
         courseName: "Learn React",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/af00e5032d0a68cc84879983f5d8333b",
         lessons: [
           "JSX",
           "Components and Advanced JSX",
@@ -107,7 +114,8 @@ const education = {
       },
       {
         courseName: "Learn JavaScript Unit Testing",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/f4276e8c08a3ba174ef0147deb0c3013",
         lessons: [
           "Why Test?",
           "Write Good Tests With Mocha",
@@ -116,7 +124,8 @@ const education = {
       },
       {
         courseName: "Learn PHP Skill Path",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/9b7bcc38d0ed49f593228763cbfd51e3",
         modules: {
           "1. Introduction": [],
           "2. PHP Variables, Strings, and Numbers": [],
@@ -130,7 +139,8 @@ const education = {
       },
       {
         courseName: "Learn Node.js",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/240305d50b925c17868f1ac7a21a3261",
         lessons: [
           "Welcome to Learn Node.js",
           "What is Back-End?",
@@ -142,7 +152,8 @@ const education = {
       },
       {
         courseName: "Learn Git & GitHub",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/a8ab218d5950c29861635cc0bf12fd13",
         lessons: [
           "Introduction: Git & GitHub",
           "Basic Git Workflow",
@@ -160,7 +171,8 @@ const education = {
       },
       {
         courseName: "Learn the Command Line",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/c87ba0541f8be78bc2f4ba1128233f6f",
         lessons: [
           "Navigating the File System",
           "Viewing and Changing the File System",
@@ -170,7 +182,8 @@ const education = {
       },
       {
         courseName: "Learn jQuery",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/0becf7c1cd2bd715f24331dddd23425a",
         lessons: [
           "Introduction",
           "Effects",
@@ -181,12 +194,14 @@ const education = {
       },
       {
         courseName: "Learn the Basics of Regular Expressions",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/9da8e26980d5139405439ee7578b8b69",
         lessons: ["Introduction to Regular Expressions"],
       },
       {
         courseName: "Building Interactive JavaScript Websites",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/36ae898a1d1c8524815305b2d1d2ebab",
         lessons: [
           "JavaScript Interactive Websites",
           "DOM Events with JavaScript",
@@ -194,8 +209,36 @@ const education = {
         ],
       },
       {
+        title: "Learn Intermediate JavaScript",
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/512386fdc7f6c934f98b01e6afa8285a",
+        lessons: [
+          "Classes",
+          "Modules",
+          "Promises",
+          "Async-Await",
+          "Requests",
+          "Errors and Error Handling",
+          {
+            category: "JavaScript Under the Hood",
+            topics: [
+              "Currying",
+              "Hoisting",
+              "Concurrency Model and Event Loop",
+              "Introduction to Memory Management",
+              "Debugging Memory Issues",
+            ],
+          },
+          {
+            category: "JavaScript Best Practices",
+            topics: ["Design Patterns"],
+          },
+        ],
+      },
+      {
         courseName: "Learn JavaScript",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/705dcb15de0da4dd9d9fc4f3274b430e",
         lessons: [
           "Introduction",
           "Conditionals",
@@ -209,12 +252,14 @@ const education = {
       },
       {
         courseName: "Learn Bootstrap",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/0595479d03627a8cb816b069000e4d06",
         lessons: ["Grid", "Utilities", "Components"],
       },
       {
         courseName: "Learn Sass",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/eb1ffda40f347629dcef6de33d3f9741",
         lessons: [
           "Create a Sass Stylesheet",
           "Mixins and the & Selector",
@@ -224,12 +269,14 @@ const education = {
       },
       {
         courseName: "Learn Navigation Design",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/91cf4a1767724a02a20b1eba7eca74ea",
         lessons: ["Links and Buttons", "Secondary Navigation"],
       },
       {
         courseName: "Build a Website with HTML, CSS, and GitHub Pages",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/5cadfefe5f1de806e9704577",
         modules: {
           "1. Beginner HTML": ["Elements and Structure", "Tables"],
           "2. Beginner CSS": ["Visual Rules"],
@@ -261,7 +308,8 @@ const education = {
       },
       {
         courseName: "Learn Intermediate CSS",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/b3dec49423da50603c25618aee635027",
         lessons: [
           "Layout with Flexbox",
           "Grid",
@@ -275,7 +323,8 @@ const education = {
       },
       {
         courseName: "Learn CSS",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/9a5bb1fc45b4281af1fffec93b0aaf05",
         lessons: [
           "Syntax and Selectors",
           "Visual Rules",
@@ -287,7 +336,8 @@ const education = {
       },
       {
         courseName: "Learn HTML",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7",
         lessons: [
           "Introduction to Web Development",
           "Elements and Structure",
@@ -298,7 +348,8 @@ const education = {
       },
       {
         courseName: "Learn How to Code",
-        certificate: true,
+        certificate:
+          "https://www.codecademy.com/profiles/koliyus/certificates/11a686a7fd57b8c214f7f92749388d42",
         modules: {
           "1. Basics of Programming I": [
             "Variables",
