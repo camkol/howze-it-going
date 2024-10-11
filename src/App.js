@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import Scroll from "./Scroll";
 import Landscape from "./Landscape";
 import Projects from "./Projects";
+import Education from "./Education";
 // import Hamburger from "./Hamburger";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Landscape />
       {/* <Hamburger /> */}
       <Projects />
+      <Education />
     </>
   );
 }
