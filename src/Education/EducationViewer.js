@@ -1,10 +1,10 @@
 import React from "react";
 import Institution from "./Institution";
 
-const EducationViewer = ({ education }) => {
+const EducationViewer = ({ transcript }) => {
   return (
     <div>
-      {Object.entries(education).map(([institution, details]) => (
+      {Object.entries(transcript).map(([institution, details]) => (
         <Institution key={institution} name={institution} details={details} />
       ))}
     </div>

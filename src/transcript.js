@@ -1,4 +1,4 @@
-const education = {
+const transcript = {
   Codecademy: {
     year: "2022-Present",
     image: "images/education/Codecademy.svg.png",
@@ -210,7 +210,7 @@ const education = {
         ],
       },
       {
-        title: "Learn Intermediate JavaScript",
+        courseName: "Learn Intermediate JavaScript",
         certificate:
           "https://www.codecademy.com/profiles/koliyus/certificates/512386fdc7f6c934f98b01e6afa8285a",
         lessons: [
@@ -446,4 +446,4 @@ const education = {
   },
 };
 
-export default education;
+export default transcript;
