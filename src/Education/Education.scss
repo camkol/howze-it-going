@@ -1,6 +1,14 @@
 $font-family_1: "Permanent Marker", cursive;
 
 #education {
+  display: flex;
+  width: 100%;
+  .educationTab {
+    width: 40%;
+  }
+  .educationViewer {
+    width: 60%;
+  }
   .titles {
     font-family: $font-family_1;
   }

@@ -1,3 +1,13 @@
+#education {
+  display: flex;
+  width: 100%;
+}
+#education .educationTab {
+  width: 40%;
+}
+#education .educationViewer {
+  width: 60%;
+}
 #education .titles {
   font-family: "Permanent Marker", cursive;
 }/*# sourceMappingURL=Education.css.map */

@@ -7,9 +7,9 @@ import EducationTabs from "./EducationTabs";
 export default function Education() {
   return (
     <section id="education" className="container">
-      {/* <div className="educationTab">
+      <div className="educationTab">
         <EducationTabs transcript={transcript} />
-      </div> */}
+      </div>
       <div className="educationViewer">
         <EducationViewer transcript={transcript} />
       </div>
