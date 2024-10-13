@@ -4,17 +4,15 @@ import transcript from "../transcript";
 import EducationViewer from "./EducationViewer";
 import EducationTabs from "./EducationTabs";
 
-function Education() {
+export default function Education() {
   return (
     <section id="education" className="container">
-      <div className="educationTab">
+      {/* <div className="educationTab">
         <EducationTabs transcript={transcript} />
-      </div>
+      </div> */}
       <div className="educationViewer">
         <EducationViewer transcript={transcript} />
       </div>
     </section>
   );
 }
-
-export default Education;

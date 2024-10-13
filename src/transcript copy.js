@@ -1,5 +1,6 @@
 const transcript = {
   Codecademy: {
+    name: "Codecademy",
     year: "2022-Present",
     image: "images/education/Codecademy.svg.png",
     courses: [
@@ -364,6 +365,7 @@ const transcript = {
     ],
   },
   freeCodeCamp: {
+    name: "freeCodeCamp",
     year: "2023-Present",
     image: "images/education/FreeCodeCamp_logo.svg.png",
     courses: [
@@ -390,6 +392,7 @@ const transcript = {
     ],
   },
   Udemy: {
+    name: "Udemy",
     year: "2023-Present",
     image: "images/education/Udemy_logo.svg.png",
     courses: [
@@ -412,7 +415,8 @@ const transcript = {
       },
     ],
   },
-  "ITT Technical Institute": {
+  ITT_Technical_Institute: {
+    name: "ITT Technical Institute",
     year: "2002-2008",
     image: "images/education/ITTTech.png",
     degrees: [
