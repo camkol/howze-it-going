@@ -7,7 +7,7 @@ import Typewriter from "./Typewriter";
 export default function Landscape() {
   return (
     <>
-      <section class="jumbotron" id="megaTop">
+      <section className="jumbotron" id="megaTop">
         <Typewriter />
 
         <Marquee />

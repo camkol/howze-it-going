@@ -1,9 +1,8 @@
-export default function InstitutionTab({ name, details }) {
+export default function InstitutionTab({ details, onSelectInstitution }) {
   return (
-    <div>
-      <h2>{name}</h2>
+    <div onClick={() => onSelectInstitution(details.name)}>
       <div>
-        <img href={details.image} alt={name} />
+        <img src={details.image} alt={details.name} />
       </div>
     </div>
   );

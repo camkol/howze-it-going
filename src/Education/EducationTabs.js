@@ -1,18 +1,13 @@
-import transcript from "../transcript";
 import InstitutionTab from "./InstitutionTab";
 
-export default function EducationTabs() {
+export default function EducationTabs({ transcript, onSelectInstitution }) {
   return (
     <>
-      <h2>Tab</h2>
-      <h2>Tab</h2>
-      <h2>Tab</h2>
-      <h2>Tab</h2>
       {Object.entries(transcript).map(([institution, details]) => (
         <InstitutionTab
           key={institution}
-          name={institution}
-          details={details}
+          details={{ name: institution, ...details }}
+          onSelectInstitution={onSelectInstitution}
         />
       ))}
     </>

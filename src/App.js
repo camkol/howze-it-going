@@ -11,12 +11,12 @@ import Education from "./Education";
 function App() {
   return (
     <>
-      <Scroll />
+      {/* <Scroll /> */}
       <Navigation />
       <Landscape />
       {/* <Hamburger /> */}
-      <Projects />
-      <Education />
+      {/* <Projects /> */}
+      {/* <Education /> */}
     </>
   );
 }
