@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       {/* <Scroll /> */}
-      <Navigation />
-      <Landscape />
+      {/* <Navigation /> */}
+      {/* <Landscape /> */}
       {/* <Hamburger /> */}
       {/* <Projects /> */}
-      {/* <Education /> */}
+      <Education />
     </>
   );
 }

@@ -419,7 +419,7 @@ const transcript = {
       {
         degreeName:
           "Associates of Applied Science in Computer Drafting and Design",
-        courses: [
+        lessons: [
           "Dynamics in an Information Society",
           "Computers in Technology",
           "Problem Solving",
@@ -433,7 +433,7 @@ const transcript = {
       {
         degreeName:
           "Bachelor of Science in Digital Entertainment and Game Design",
-        courses: [
+        lessons: [
           "Introduction to Computer Programming",
           "Animation I",
           "Audio/Video Techniques",
