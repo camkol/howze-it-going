@@ -17,6 +17,19 @@ $font-family_1: "Permanent Marker", cursive;
   }
   .educationViewer {
     width: 60%;
+    .institution {
+      .courseList {
+        .course {
+          .lessonModule {
+          }
+          .lessonModule {
+          }
+          .close {
+            display: none;
+          }
+        }
+      }
+    }
   }
   .titles {
     font-family: $font-family_1;

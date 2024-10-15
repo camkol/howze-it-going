@@ -17,6 +17,9 @@
 #education .educationViewer {
   width: 60%;
 }
+#education .educationViewer .institution .courseList .course .close {
+  display: none;
+}
 #education .titles {
   font-family: "Permanent Marker", cursive;
 }/*# sourceMappingURL=Education.css.map */

@@ -3,7 +3,7 @@ import CourseList from "./CourseList";
 
 const Institution = ({ name, details }) => {
   return (
-    <div>
+    <div className="institution">
       <h2>
         {name} ({details.year})
       </h2>
