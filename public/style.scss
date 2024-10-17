@@ -105,6 +105,13 @@ $border-color_1: transparent #447fff #447fff transparent;
   background-color: $background-color_1;
 }
 
+.mobile {
+  display: none;
+}
+.presser {
+  cursor: pointer;
+}
+
 hr {
   margin-block: 1rem;
 }
@@ -135,12 +142,6 @@ h1 {
 
 a {
   margin: 0;
-}
-
-#experience {
-  .titles {
-    font-family: $font-family_4;
-  }
 }
 
 .col-md-6 {
@@ -204,15 +205,8 @@ canvas {
   }
 }
 
-.mobile {
-  display: none;
-}
-
 .views {
   display: none;
-}
-.presser {
-  cursor: pointer;
 }
 .section-grid {
   display: grid;
@@ -433,20 +427,6 @@ canvas {
       }
     }
   }
-}
-
-#faceOfPort {
-  font-family: $font-family_5;
-  background-color: $background-color_5;
-  color: $color_6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#megaTop {
-  display: block;
-  padding: 164px 0;
 }
 
 @media (min-width: 1000px) {

@@ -78,6 +78,14 @@
   background-color: #d3d3d3;
 }
 
+.mobile {
+  display: none;
+}
+
+.presser {
+  cursor: pointer;
+}
+
 hr {
   margin-block: 1rem;
 }
@@ -110,10 +118,6 @@ h1 {
 
 a {
   margin: 0;
-}
-
-#experience .titles {
-  font-family: "Anton", sans-serif;
 }
 
 .col-md-6 {
@@ -182,16 +186,8 @@ canvas {
   width: 5px;
 }
 
-.mobile {
-  display: none;
-}
-
 .views {
   display: none;
-}
-
-.presser {
-  cursor: pointer;
 }
 
 .section-grid {
@@ -419,20 +415,6 @@ canvas {
 }
 .accordion-active .accordion-item__container h6:last-child {
   margin-bottom: 0;
-}
-
-#faceOfPort {
-  font-family: "Montserrat", sans-serif;
-  background-color: #eee;
-  color: #111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#megaTop {
-  display: block;
-  padding: 164px 0;
 }
 
 @media (min-width: 1000px) {

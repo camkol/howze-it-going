@@ -6,6 +6,7 @@ import Scroll from "./Scroll";
 import Landscape from "./Landscape";
 import Projects from "./Projects";
 import Education from "./Education";
+import Experience from "./Experience";
 // import Hamburger from "./Hamburger";
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       {/* <Landscape /> */}
       {/* <Hamburger /> */}
       {/* <Projects /> */}
-      <Education />
+      {/* <Education /> */}
+      <Experience />
     </>
   );
 }
