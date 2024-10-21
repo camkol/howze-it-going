@@ -128,14 +128,14 @@ const transcript = {
         certificate:
           "https://www.codecademy.com/profiles/koliyus/certificates/9b7bcc38d0ed49f593228763cbfd51e3",
         modules: {
-          "1. Introduction": [],
-          "2. PHP Variables, Strings, and Numbers": [],
-          "3. PHP Functions": [],
-          "4. PHP Conditionals and Logic": [],
-          "5. PHP Arrays and Loops": [],
-          "6. PHP and HTML": ["Form Handling", "Form Validation"],
-          "7. PHP Classes and Objects": [],
-          "8. Next Steps": [],
+          Introduction: [],
+          "PHP Variables, Strings, and Numbers": [],
+          "PHP Functions": [],
+          "PHP Conditionals and Logic": [],
+          "PHP Arrays and Loops": [],
+          "PHP and HTML": ["Form Handling", "Form Validation"],
+          "PHP Classes and Objects": [],
+          "Next Steps": [],
         },
       },
       {

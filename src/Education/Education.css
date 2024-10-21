@@ -7,16 +7,32 @@
 }
 #education .educationTab .tab {
   width: 100%;
-  height: 25%;
+  background-color: #d3d3d3;
   border: 1px solid black;
 }
-#education .educationTab .tab img {
+#education .educationTab .tab .imageHold {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#education .educationTab .tab .imageHold img {
   max-height: 90%;
   max-width: 90%;
+}
+#education .educationTab .tab.active,
+#education .educationTab .tab:hover {
+  background-color: #ffffff;
 }
 #education .educationViewer {
   width: 60%;
   overflow: scroll;
+}
+#education .educationViewer .institution {
+  margin-left: 1rem;
+}
+#education .educationViewer .institution .courseList {
+  margin-left: 1rem;
 }
 #education .educationViewer .institution .courseList .course .close {
   display: none;

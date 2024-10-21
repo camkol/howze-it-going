@@ -18,6 +18,7 @@ export default function Education() {
         <EducationTabs
           transcript={transcript}
           onSelectInstitution={handleSelectInstitution}
+          selectedInstitution={selectedInstitution}
         />
       </div>
       <div className="educationViewer">
@@ -30,7 +31,13 @@ export default function Education() {
   );
 }
 
-function EducationTabs({ transcript, onSelectInstitution }) {
+function EducationTabs({
+  transcript,
+  onSelectInstitution,
+  selectedInstitution,
+}) {
+  const styleHeight = { height: `${100 / Object.keys(transcript).length}%` };
+
   return (
     <>
       {Object.entries(transcript).map(([institution, details]) => (
@@ -38,19 +45,31 @@ function EducationTabs({ transcript, onSelectInstitution }) {
           key={institution}
           details={{ name: institution, ...details }}
           onSelectInstitution={onSelectInstitution}
+          style={styleHeight}
+          selectedInstitution={selectedInstitution}
         />
       ))}
     </>
   );
 }
 
-function InstitutionTab({ details, onSelectInstitution }) {
+function InstitutionTab({
+  details,
+  onSelectInstitution,
+  selectedInstitution,
+  style,
+}) {
   return (
     <div
-      className="tab presser"
+      className={`tab presser ${
+        selectedInstitution?.name === details.name ? "active" : ""
+      }`}
       onClick={() => onSelectInstitution(details.name)}
+      style={style}
     >
-      <img src={details.image} alt={details.name} />
+      <div className="imageHold">
+        <img src={details.image} alt={details.name} />
+      </div>
     </div>
   );
 }
@@ -147,18 +166,19 @@ function LessonModule({ lessons, modules }) {
         </ul>
       )}
       {modules && (
-        <div>
+        <ol>
           {Object.entries(modules).map(([module, lessons], index) => (
-            <div key={index}>
-              <h4>{module}</h4>
+            <li key={index}>
+              {module}
+
               <ul>
                 {lessons.map((lesson, index) => (
                   <li key={index}>{lesson}</li>
                 ))}
               </ul>
-            </div>
+            </li>
           ))}
-        </div>
+        </ol>
       )}
     </>
   );

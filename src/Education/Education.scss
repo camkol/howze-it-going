@@ -29,24 +29,35 @@ $border-color_1: transparent #447fff #447fff transparent;
     width: 40%;
     .tab {
       width: 100%;
-      height: 25%;
+      background-color: $background-color_1;
       border: 1px solid black;
-      img {
-        max-height: 90%;
-        max-width: 90%;
+      .imageHold {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-height: 90%;
+          max-width: 90%;
+        }
       }
+    }
+    .tab.active,
+    .tab:hover {
+      background-color: $background-color_2;
     }
   }
   .educationViewer {
     width: 60%;
     overflow: scroll;
     .institution {
+      margin-left: 1rem;
       .courseList {
+        margin-left: 1rem;
         .course {
           .lessonModule {
           }
-          .lessonModule {
-          }
+
           .close {
             display: none;
           }
