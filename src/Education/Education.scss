@@ -31,6 +31,7 @@ $border-color_1: transparent #447fff #447fff transparent;
       width: 100%;
       background-color: $background-color_1;
       border: 1px solid black;
+      transition: all 0.3s;
       .imageHold {
         height: 100%;
         display: flex;

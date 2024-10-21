@@ -88,6 +88,7 @@ const Institution = ({ name, details }) => {
       <h2>
         {name} ({details.year})
       </h2>
+      <hr />
       <CourseList courses={details.courses || details.degrees} />
     </div>
   );

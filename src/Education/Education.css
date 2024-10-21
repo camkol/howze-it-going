@@ -9,6 +9,7 @@
   width: 100%;
   background-color: #d3d3d3;
   border: 1px solid black;
+  transition: all 0.3s;
 }
 #education .educationTab .tab .imageHold {
   height: 100%;
