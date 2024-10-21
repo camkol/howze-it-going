@@ -19,19 +19,16 @@ $border-color_1: rgba(0, 0, 0, 0.1);
 header {
   // padding: 20px 0;
   position: absolute;
-  .row {
-    display: flex;
-    align-items: center;
-  }
-}
-nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
+  height: 10rem;
+  // .row {
+  //   display: flex;
+  //   align-items: center;
+  // }
 }
 
 .navbar {
   width: 100%;
+  height: 5rem;
   position: absolute;
   display: flex;
   align-items: center;
@@ -57,7 +54,6 @@ nav {
   .list {
     margin-top: 0px;
     list-style: none;
-    display: inline-block;
     display: flex;
     padding-left: 0px;
     margin-bottom: 0px;

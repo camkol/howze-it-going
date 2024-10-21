@@ -28,6 +28,9 @@ $border-color_1: transparent #447fff #447fff transparent;
 
 section {
   height: 100vh;
+  padding-top: 5rem;
+  color: $color_1;
+  background-color: $background-color_6;
 }
 
 .titles {
@@ -44,6 +47,7 @@ section {
     padding: 0.3rem;
     margin: 0.15rem;
     color: $color_4;
+    border: solid 1px #fff;
   }
   .htmlSpan {
     background: radial-gradient(

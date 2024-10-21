@@ -13,12 +13,12 @@ function App() {
   return (
     <>
       {/* <Scroll /> */}
-      {/* <Navigation /> */}
+      <Navigation />
       {/* <Landscape /> */}
       {/* <Hamburger /> */}
       {/* <Projects /> */}
-      {/* <Education /> */}
-      <Experience />
+      <Education />
+      {/* <Experience /> */}
     </>
   );
 }

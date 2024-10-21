@@ -33,11 +33,23 @@ export default function Menu() {
 
   return (
     <div id="navbarSupportedContent" className="collapse navbar-collapse">
-      <ul className="list">
-        {navigationItems.map((item, index) => (
-          <List item={item} key={index} isActive={activeLink === item.href} />
-        ))}
-      </ul>
+      <input
+        type="checkbox"
+        id="navi-toggle"
+        className="checkbox"
+        checked={isChecked}
+        onChange={handleCheckboxChange}
+      />
+      <label htmlFor="navi-toggle" className="button">
+        <span className="icon">&nbsp;</span>
+      </label>
+      <nav className={`nav ${isChecked ? "open" : ""}`}>
+        <ul className="list">
+          {navigationItems.map((item, index) => (
+            <List item={item} key={index} isActive={activeLink === item.href} />
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 }

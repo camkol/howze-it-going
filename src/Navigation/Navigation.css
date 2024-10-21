@@ -10,51 +10,60 @@
   animation: rollOut 1s ease-out;
 }
 
+
 header {
   position: absolute;
-}
-header .row {
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
+  height: 10rem;
 }
 
 .navbar {
   width: 100%;
+  height: 5rem;
   position: absolute;
   display: flex;
   align-items: center;
-
+  background-color: transparent;
   justify-content: space-between;
 }
-
-/* Navigation List */
+.navbar .roll-out-text {
+  text-decoration: none;
+  margin: 10px;
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  animation: 1s ease-out 0s 1 normal none running rollOut;
+  color: #fff;
+}
+.navbar .roll-out-text h1 {
+  margin: 0px;
+}
+.navbar #navi-toggle {
+  display: none;
+}
 .navbar .list {
+  margin-top: 0px;
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
+  padding-left: 0px;
+  margin-bottom: 0px;
 }
-
-.navbar .item {
-  margin: 0 1rem;
-}
-
-.navbar .link {
+.navbar .list .item {
   text-decoration: none;
+}
+.navbar .list .item .link {
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 1rem;
   font-size: 1.25rem;
+  line-height: inherit;
   color: #fff;
-  transition: color 0.3s;
 }
 
-.navbar .link.active {
-  color: lightgreen; /* Active link color */
-}
 @media screen and (max-width: 1000px) {
   #navbarSupportedContent {
     position: absolute;
@@ -123,12 +132,7 @@ nav {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    background-image: linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      white 50%
-    );
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
     background-size: 220%;
     transition: all 0.4s;
   }
@@ -192,4 +196,4 @@ nav {
     top: 0;
     transform: rotate(-135deg);
   }
-} /*# sourceMappingURL=Navigation.css.map */
+}/*# sourceMappingURL=Navigation.css.map */

@@ -3,6 +3,9 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 section {
   height: 100vh;
+  padding-top: 5rem;
+  color: #ffffff;
+  background-color: #111;
 }
 
 .titles {
@@ -20,6 +23,7 @@ section {
   padding: 0.3rem;
   margin: 0.15rem;
   color: white;
+  border: solid 1px #fff;
 }
 .progStyle .htmlSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #e44d26 0%, #f16529 70%);

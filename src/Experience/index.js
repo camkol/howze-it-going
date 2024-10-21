@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import "./Experience.css";
 
 // Job Data
 const jobData = [
@@ -41,80 +42,106 @@ const jobData = [
     ],
     imageSrc: "images/experiece/usarmy(whole).png",
   },
-  // Add other jobs here ...
+  {
+    title: "Baumholder BOSS President",
+    company: "BOSS Program(Us Army)",
+    duration: "2015-2016",
+    responsibilities: [
+      "Facilitated fundraising activities generating 80% in profit from sales through hosting community events.",
+      "Designed guidelines for personnel from 18 separate sections to follow in order to work more effectively.",
+      "Consistently conducted briefs for new personnel inspiring their morale for the area they relocated.",
+      "Coordinated events for leisure travel and volunteering of communities.",
+      "Build partnerships to construct profit and nonprofit programs.",
+      "Conveyed monthly, quarterly, and annual budget and activities.",
+      "Instructed employees on and modified the standards required for the organization.",
+    ],
+    imageSrc: "images/experiece/boss(whole).png",
+  },
+  {
+    title: "CAD Operator",
+    company: "Reich Design Associates. P.L.C",
+    duration: "2006-2007",
+    responsibilities: [
+      "Completed and modified majority of company interior, exterior and detailed architectural plans.",
+    ],
+    imageSrc: "images/experiece/reichdesign(whole).png",
+  },
+  {
+    title: "CAD Operator",
+    company: "Tidewater Naval Architects",
+    duration: "2004-2005",
+    responsibilities: [
+      "Completed and modified interior, exterior and detailed naval plans.",
+    ],
+    imageSrc: "images/experiece/tidewater(whole).png",
+  },
 ];
 
 // Experience Component
 export default function Experience() {
+  const [selectedJob, setSelectedJob] = useState(null);
+
+  const handleSelectJob = (company) => {
+    const jobObject = jobData.find((job) => job.company === company);
+    setSelectedJob((current) =>
+      company === current?.company ? null : jobObject
+    );
+  };
+
   return (
     <section className="container" id="experience">
-      <h2 className="titles">Past Employment</h2>
+      {/* <h2 className="titles">Past Employment</h2> */}
 
-      <ExperienceTabs />
-      <ExperienceViewer />
+      <ExperienceTabs jobData={jobData} onSelectJob={handleSelectJob} />
+      {!selectedJob && <div></div>}
+      {selectedJob && <ExperienceViewer selectedJob={selectedJob} />}
     </section>
   );
 }
-function ExperienceTabs({ jobData }) {
+function ExperienceTabs({ jobData, onSelectJob }) {
   return (
-    <div className="educationTab">
+    <div className="experienceTab">
       {jobData.map((job, index) => (
-        <div key={index} id={`${index}Tab`}>
-          <Employer company={job.company} duration={job.duration} />
-        </div>
+        <Employer
+          key={index}
+          company={job.company}
+          duration={job.duration}
+          jobData={job}
+          onSelectJob={onSelectJob}
+        />
       ))}
     </div>
   );
 }
 
-function Employer({ company, duration }) {
+function Employer({ company, duration, onSelectJob }) {
   return (
-    <div className="employer">
+    <div className="employer" onClick={() => onSelectJob(company)}>
       <h2>{company}</h2>
       <p>{duration}</p>
     </div>
   );
 }
 
-function ExperienceViewer() {
+function ExperienceViewer({ selectedJob }) {
+  const { title, company, duration, responsibilities, imageSrc } = selectedJob;
+
   return (
     <div className="educationViewer">
-      {jobData.map((job, index) => (
-        <div key={index} id={`section${index + 1}`}>
-          <Job
-            title={job.title}
-            company={job.company}
-            duration={job.duration}
-            responsibilities={job.responsibilities}
-            imageSrc={job.imageSrc}
-          />
-        </div>
-      ))}
+      <div className="section-grid">
+        <div className="grid-image active">
+          <img src={imageSrc} alt={company} />
+        </div>{" "}
+        <h4>{company}</h4> <h3 className="font-weight-bold">{title}</h3>
+        <p className="card-text">{duration}</p>
+        <ul>
+          {responsibilities.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
 
 // Create a reusable Job component
-const Job = ({ title, company, duration, responsibilities, imageSrc }) => {
-  return (
-    <div className="section-grid">
-      <div className="left">
-        <div className="grid-text">
-          <h3 className="font-weight-bold">{title}</h3>
-          <h4>{company}</h4>
-          <p className="card-text">{duration}</p>
-          <ul>
-            {responsibilities.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <div className="right">
-        <div className="grid-image active">
-          <img src={imageSrc} alt={company} />
-        </div>
-      </div>
-    </div>
-  );
-};

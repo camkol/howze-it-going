@@ -16,6 +16,7 @@
 }
 #education .educationViewer {
   width: 60%;
+  overflow: scroll;
 }
 #education .educationViewer .institution .courseList .course .close {
   display: none;
