@@ -17,8 +17,8 @@ function App() {
       {/* <Landscape /> */}
       {/* <Hamburger /> */}
       {/* <Projects /> */}
-      <Education />
-      {/* <Experience /> */}
+      {/* <Education /> */}
+      <Experience />
     </>
   );
 }
