@@ -1,3 +1,15 @@
+@keyframes rollDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.roll-out-text {
+  animation: rollDown 1s ease-out;
+}
+
 #education {
   display: flex;
   width: 100%;

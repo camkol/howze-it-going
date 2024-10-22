@@ -37,6 +37,7 @@ $border-color_1: transparent #447fff #447fff transparent;
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all 0.3s;
       h2 {
         text-align: center;
       }

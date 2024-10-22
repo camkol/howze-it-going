@@ -22,6 +22,19 @@ $background-color_5: #eee;
 $background-color_6: #111;
 $border-color_1: transparent #447fff #447fff transparent;
 
+@keyframes rollDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.roll-out-text {
+  animation: rollDown 1s ease-out;
+}
+
 #education {
   display: flex;
   width: 100%;
