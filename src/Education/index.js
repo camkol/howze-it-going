@@ -66,6 +66,7 @@ function InstitutionTab({
       }`}
       onClick={() => onSelectInstitution(details.name)}
       style={style}
+      id={details.name}
     >
       <div className="imageHold">
         <img src={details.image} alt={details.name} />
