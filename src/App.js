@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./App.css";
 import Navigation from "./Navigation";
-import Scroll from "./Scroll";
+// import Scroll from "./Scroll";
 import Landscape from "./Landscape";
 import Projects from "./Projects";
 import Education from "./Education";
