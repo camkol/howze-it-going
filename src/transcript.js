@@ -369,7 +369,8 @@ const transcript = {
     courses: [
       {
         courseName: "JavaScript Algorithms and Data Structures",
-        certificate: true,
+        certificate:
+          "https://www.freecodecamp.org/certification/koliyus/javascript-algorithms-and-data-structures",
         lessons: [
           "Basic JavaScript",
           "ES6",
@@ -384,7 +385,8 @@ const transcript = {
       },
       {
         courseName: "Responsive Web Design",
-        certificate: true,
+        certificate:
+          "https://www.freecodecamp.org/certification/koliyus/responsive-web-design",
         lessons: ["HTML", "CSS"],
       },
     ],
@@ -394,8 +396,165 @@ const transcript = {
     image: "images/education/Udemy_logo.svg.png",
     courses: [
       {
+        courseName: "The Ultimate React Course (in progress)",
+        lessons: [
+          "React Fundamentals",
+          {
+            category: "React Fundamentals",
+            topics: [
+              "Components",
+              "JSX",
+              "Props",
+              "Events",
+              "Forms",
+              "State",
+              "Props vs. State",
+            ],
+          },
+          {
+            category: "How to Think About State",
+            topics: [
+              "Where to Place State",
+              "Guidelines",
+              "Lifting State Up",
+              "Local vs. Global State",
+              "UI vs. Remote State",
+            ],
+          },
+          {
+            category: "How to Think About Components",
+            topics: [
+              "Split Components",
+              "Props as API",
+              "Building Reusable and Composable Components",
+              "Children Prop",
+            ],
+          },
+          {
+            category: "Deep Dive into Effects and useEffect",
+            topics: [
+              "Data Fetching",
+              "Lifecycle vs. Synchronization",
+              "When to Use Effects",
+              "Effects vs. Event Handlers",
+            ],
+          },
+          {
+            category: "Deep Dive into Hooks",
+            topics: [
+              "Rules of Hooks",
+              "How Hooks Work",
+              "useRef",
+              "Building Super-Reusable Custom Hooks",
+            ],
+          },
+          // {
+          //   category: "Performance Optimization",
+          //   topics: [
+          //     "Wasted Renders",
+          //     "Memoization with memo",
+          //     "useMemo",
+          //     "useCallback",
+          //     "Optimizing Context API",
+          //     "Code Splitting + Suspense",
+          //   ],
+          // },
+          // {
+          //   category: "Advanced State Management",
+          //   topics: [
+          //     "useReducer Hook",
+          //     "Context API",
+          //     "Redux",
+          //     "Redux Toolkit",
+          //     "Thunks",
+          //     "React Query",
+          //   ],
+          // },
+          // {
+          //   category: "Building Single-Page Applications (SPA)",
+          //   topics: [
+          //     "Vite",
+          //     "Routing with React Router",
+          //     "URL Parameters and Query Strings",
+          //     "Data Loaders and Actions (v6.4+)",
+          //   ],
+          // },
+          // {
+          //   category: "Building Real-World Features",
+          //   topics: [
+          //     "Authentication and Authorization",
+          //     "Data Sorting, Filtering, and Pagination",
+          //     "Dark Mode",
+          //     "Dashboards with Charts",
+          //   ],
+          // },
+          // {
+          //   category: "Creating Your Own Backend with Supabase",
+          //   topics: ["Supabase Overview", "DB and API Integration"],
+          // },
+          // {
+          //   category: "How to Style React Apps",
+          //   topics: ["Tailwind CSS", "CSS Modules", "Styled Components"],
+          // },
+          // {
+          //   category: "Advanced React Patterns",
+          //   topics: [
+          //     "Render Props",
+          //     "Higher-Order Components",
+          //     "Compound Components",
+          //   ],
+          // },
+          // {
+          //   category: "How React Works Behind the Scenes",
+          //   topics: [
+          //     "Rendering",
+          //     "Virtual DOM",
+          //     "Reconciliation",
+          //     "Fiber Tree",
+          //     "Key Prop",
+          //     "Events",
+          //     "State Batching",
+          //   ],
+          // },
+          // {
+          //   category: "Next.js with the 'app' Router",
+          //   topics: [
+          //     "Server-Side Rendering",
+          //     "Static vs. Dynamic Rendering",
+          //     "State Management Between Server and Client",
+          //     "Data Loading Strategies",
+          //     "Streaming",
+          //     "Caching",
+          //     "Image and Font Optimization",
+          //     "Authentication with NextAuth",
+          //     "Modern React Hooks (useFormState, useOptimistic)",
+          //   ],
+          // },
+        ],
+      },
+      {
         courseName: "The Web Developer Bootcamp (in progress)",
         lessons: [
+          // "Maps and Geocoding",
+          // "Image Upload and Storage",
+          // "Cloud Databases",
+          // "Deploying Apps",
+          // "Developer Best Practices",
+          // "Common Security Issues - SQL Injection, XSS, etc.",
+          // "Authorization",
+          // "Cookies & Sessions",
+          // "Authentication From Scratch",
+          // "Mongoose",
+          // "Schema Design",
+          // "Database Associations",
+          // "MongoDB",
+          // "SQL vs. NoSQL databases",
+          // "REST",
+          // "Templating",
+          // "ExpressJS",
+          // "NPM",
+          // "NodeJS",
+          // "SemanticUI",
           "ReactJS",
           "Unix (Command Line) Commands",
           "JavaScript",

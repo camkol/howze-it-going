@@ -55,6 +55,7 @@ function Employer({ company, onSelectJob, style, selectedJob }) {
       }`}
       onClick={() => onSelectJob(company)}
       style={style}
+      id=""
     >
       <h2>{company}</h2>
     </div>
