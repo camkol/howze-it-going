@@ -398,7 +398,6 @@ const transcript = {
       {
         courseName: "The Ultimate React Course (in progress)",
         lessons: [
-          "React Fundamentals",
           {
             category: "React Fundamentals",
             topics: [
