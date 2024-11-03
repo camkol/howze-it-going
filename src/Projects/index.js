@@ -41,20 +41,22 @@ export function Projects() {
   );
 }
 
-export function ProjMobile() {
+export function ProjMobile({ isMobile }) {
   return (
     <section id="projects" className="container">
       {" "}
       <h2 className="titles">Projects</h2>{" "}
       {library.map(
         (project) =>
-          project.star ? <Project project={project} key={project.name} /> : null // If `star` is false or undefined, don't render anything
+          project.star ? (
+            <Project project={project} key={project.name} isMobile={isMobile} />
+          ) : null // If `star` is false or undefined, don't render anything
       )}
     </section>
   );
 }
 
-function Project({ project, onSelectProject }) {
+function Project({ project, onSelectProject, isMobile }) {
   // Initialize state with the project's image source
   const [imageSrc, setImageSrc] = useState(project.projectImage);
 
@@ -137,7 +139,7 @@ function Project({ project, onSelectProject }) {
   return (
     <div
       className="card presenter"
-      onClick={() => onSelectProject(project.name)}
+      onClick={!isMobile ? () => onSelectProject(project.name) : undefined}
     >
       <div className="card-body presser">
         <div id={project.name} className="imager">
@@ -149,8 +151,19 @@ function Project({ project, onSelectProject }) {
             onMouseOut={() => setImageSrc(project.projectImage)}
           />
         </div>
-        <hr />
         <h5 className="card-title">{project.name}</h5>
+        {isMobile && (
+          <div className="card-buttons">
+            <a href={project.gitHub} target="_blank" rel="noreferrer noopener">
+              <button className="card-button presser">GitHub</button>
+            </a>
+            <a href={project.site} target="_blank" rel="noreferrer noopener">
+              <button className="card-button presser">View</button>
+            </a>
+          </div>
+        )}
+
+        <hr />
         <p className="progStyle">
           {renderLanguages(project.language)} {/* Call the render function */}
         </p>

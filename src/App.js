@@ -39,7 +39,7 @@ function App() {
           <Scroll />
           <NavMobile />
           <Landscape />
-          <ProjMobile />
+          <ProjMobile isMobile={isMobile} />
         </>
       )}
     </div>

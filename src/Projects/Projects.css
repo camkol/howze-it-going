@@ -58,7 +58,7 @@
   margin: auto;
 }
 #projectGrid .scrollport .card .card-body h5 {
-  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 .projectpreview {
@@ -113,6 +113,19 @@
   }
   .card {
     margin-bottom: 3rem;
+  }
+  .card .card-body .card-title {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .card .card-body .card-buttons a .card-button {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15%;
+    background: linear-gradient(to right, #0091ff 15%, #00436b 100%);
   }
   .progStyle {
     margin-top: 1rem;
