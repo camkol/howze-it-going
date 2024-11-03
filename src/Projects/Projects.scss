@@ -105,3 +105,15 @@ $background-color_1: #3d3d3d;
     }
   }
 }
+
+@media (max-width: 599px) {
+  .navbar {
+    height: auto;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+  .progStyle {
+    margin-top: 1rem;
+  }
+}

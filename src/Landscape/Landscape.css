@@ -188,8 +188,11 @@
     background-position-y: -120px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 599px) {
   #coolAssTitle {
     font-size: 32px;
+  }
+  .jumbotron {
+    background-position-y: center;
   }
 }/*# sourceMappingURL=Landscape.css.map */

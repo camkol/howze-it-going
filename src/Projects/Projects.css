@@ -106,4 +106,15 @@
   .card.presenter:hover {
     transform: scale(1.1);
   }
+}
+@media (max-width: 599px) {
+  .navbar {
+    height: auto;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+  .progStyle {
+    margin-top: 1rem;
+  }
 }/*# sourceMappingURL=Projects.css.map */

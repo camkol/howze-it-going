@@ -2,11 +2,13 @@
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 
+.app {
+  background-color: #111;
+}
+
 section {
-  height: 100vh;
   padding-top: 5rem;
   color: #ffffff;
-  background-color: #111;
 }
 
 .titles {
@@ -63,9 +65,6 @@ section {
 @media (max-width: 599px) {
   .jumbotron {
     height: 100vh;
-  }
-  .card {
-    margin-bottom: 3rem;
   }
 }
 @media (min-width: 600px) {

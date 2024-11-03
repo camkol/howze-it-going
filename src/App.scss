@@ -6,11 +6,12 @@ $background-color_1: #111;
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 /*# sourceMappingURL=App.css.map */
+.app {
+  background-color: $background-color_1;
+}
 section {
-  height: 100vh;
   padding-top: 5rem;
   color: $color_1;
-  background-color: $background-color_1;
 }
 .titles {
   font-size: 2rem;
@@ -108,9 +109,6 @@ section {
 @media (max-width: 599px) {
   .jumbotron {
     height: 100vh;
-  }
-  .card {
-    margin-bottom: 3rem;
   }
 }
 @media (min-width: 600px) {

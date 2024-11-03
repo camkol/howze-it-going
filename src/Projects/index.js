@@ -20,7 +20,6 @@ export function Projects() {
         <div id="projectGrid">
           <div className="scrollport">
             {" "}
-            <h2 className="titles">Projects</h2>
             {library.map(
               (project) =>
                 project.star ? (
@@ -46,6 +45,7 @@ export function ProjMobile() {
   return (
     <section id="projects" className="container">
       {" "}
+      <h2 className="titles">Projects</h2>{" "}
       {library.map(
         (project) =>
           project.star ? <Project project={project} key={project.name} /> : null // If `star` is false or undefined, don't render anything

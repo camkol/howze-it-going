@@ -19,7 +19,7 @@ function App() {
     setSelectedSection(label);
   };
   return (
-    <>
+    <div className="app">
       {/* <Hamburger /> */}
       {isDesktop && (
         <>
@@ -42,7 +42,7 @@ function App() {
           <ProjMobile />
         </>
       )}
-    </>
+    </div>
   );
 }
 
