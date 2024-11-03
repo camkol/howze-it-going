@@ -6,6 +6,7 @@
     transform: translateY(0);
   }
 }
+
 .roll-out-text {
   animation: rollDown 1s ease-out;
 }
@@ -33,8 +34,10 @@
   max-height: 90%;
   max-width: 90%;
 }
-#education .educationTab .tab.active,
 #education .educationTab .tab:hover {
+  background-color: #ffffff;
+}
+#education .educationTab .tab.active {
   background-color: #ffffff;
 }
 #education .educationViewer {

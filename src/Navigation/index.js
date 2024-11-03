@@ -1,12 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "./Navigation.css";
 
-export default function Navigation({ onSelectSection }) {
+export function Navigation({ onSelectSection }) {
   return (
     <>
       <nav className="navbar" role="navigation">
         <Name />
         <Menu onSelectSection={onSelectSection} />
+      </nav>
+    </>
+  );
+}
+export function NavMobile() {
+  return (
+    <>
+      <nav className="navbar" role="navigation">
+        <Name />
       </nav>
     </>
   );

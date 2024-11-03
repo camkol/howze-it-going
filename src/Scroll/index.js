@@ -1,12 +1,51 @@
-import React from "react";
-import "./Scroll.css";
+// ScrollToTop.js
+import React, { useState, useEffect } from "react";
+import "./Scroll.css"; // Your CSS file
 
-export default function Scroll() {
+function Scroll() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Show/hide the button when scrolling
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 50) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
+  // Scroll smoothly to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
-      <a id="return-to-top" href="/#">
-        <i className="fa-solid fa-chevron-up" aria-hidden="true" />
-      </a>
+      {isVisible && (
+        <a
+          href="#"
+          className="return-to-top"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToTop();
+          }}
+        >
+          <i className="fa-solid fa-chevron-up"></i>
+        </a>
+      )}
     </>
   );
 }
+
+export default Scroll;

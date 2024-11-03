@@ -20,7 +20,7 @@ $background-color_2: #ffffff;
   }
 }
 /*# sourceMappingURL=Landscape.css.map */
-&:root {
+:root {
   --marquee-width: 100vw;
   --marquee-height: 12vh;
   --marquee-elements-displayed: 5;
@@ -47,7 +47,6 @@ $background-color_2: #ffffff;
     color: $color_2;
   }
 }
-
 #megaTop {
   box-sizing: border-box;
   border-radius: 0.3rem;
@@ -94,7 +93,6 @@ $background-color_2: #ffffff;
     color: $color_7;
   }
 }
-
 #faceOfPort {
   box-sizing: border-box;
   font-family: $font-family_1;
@@ -168,7 +166,7 @@ $background-color_2: #ffffff;
   }
 }
 @media (max-width: 600px) {
-  &:root {
+  :root {
     --marquee-width: 100vw;
     --marquee-height: 8vh;
     --marquee-elements-displayed: 3;

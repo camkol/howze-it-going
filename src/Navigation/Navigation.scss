@@ -1,11 +1,7 @@
 $color_1: #ffffff;
 $color_2: #000000;
-$color_3: white;
-$color_4: lightgreen;
 $background-color_1: transparent;
 $background-color_2: #fff;
-$background-color_3: white;
-$background-color_4: gray;
 
 @keyframes rollOut {
   from {
@@ -52,14 +48,11 @@ header {
   #navi-toggle {
     display: none;
   }
-
   .list {
     height: 100%;
-
     list-style: none;
     display: flex;
     align-items: center;
-
     .item {
       height: 100%;
       padding: 0 1rem;
@@ -68,9 +61,15 @@ header {
         white-space: nowrap;
         color: $color_1;
       }
+      &:hover {
+        background-color: $background-color_2;
+        transition: all 0.3s;
+        .link {
+          color: $color_2;
+        }
+      }
     }
-    .item.active,
-    .item:hover {
+    .item.active {
       background-color: $background-color_2;
       transition: all 0.3s;
       .link {
@@ -79,176 +78,3 @@ header {
     }
   }
 }
-
-// @media screen and (max-width: 1000px) {
-//   #navbarSupportedContent {
-//     position: absolute;
-//   }
-//   #navi-toggle {
-//     display: block;
-//   }
-//   .checkbox {
-//     display: none;
-//     &:checked {
-//       ~ {
-//         .background {
-//           transform: scale(80);
-//         }
-//         .nav {
-//           opacity: 1;
-//           width: 100%;
-//           right: 0;
-//         }
-//       }
-//       + {
-//         .button {
-//           .icon {
-//             background-color: $background-color_1;
-//             &::before {
-//               top: 0;
-//               transform: rotate(135deg);
-//             }
-//             &::after {
-//               top: 0;
-//               transform: rotate(-135deg);
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-//   .button {
-//     position: relative;
-//     background-color: $background-color_3;
-//     height: 5rem;
-//     width: 5rem;
-//     border-radius: 50%;
-//     position: fixed;
-//     top: 5vh;
-//     right: 5vw;
-//     z-index: 2000;
-//     box-shadow: 0 1rem 3rem black;
-//     text-align: center;
-//     cursor: pointer;
-//     &:hover {
-//       icon {
-//         &:before {
-//           top: -1rem;
-//         }
-//         &::after {
-//           top: 1rem;
-//         }
-//       }
-//     }
-//   }
-//   .background-BH {
-//     height: 4rem;
-//     width: 4rem;
-//     border-radius: 50%;
-//     position: fixed;
-//     top: 5.5vh;
-//     right: 5.5vw;
-//     background-image: radial-gradient(green, black);
-//     z-index: 1000;
-//     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-//   }
-//   .nav {
-//     height: 100vh;
-//     position: fixed;
-//     top: 0;
-//     right: -60vw;
-//     z-index: 1500;
-//     opacity: 0;
-//     width: 0;
-//     transition: all 0.8s;
-//   }
-//   .list {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     list-style: none;
-//     text-align: center;
-//     width: 100%;
-//   }
-//   .item {
-//     margin: 1rem;
-//     font-size: 36px;
-//   }
-//   .link {
-//     &:link {
-//       display: inline-block;
-//       font-size: 3rem;
-//       font-weight: 300;
-//       padding: 1rem 2rem;
-//       color: $color_3;
-//       text-decoration: none;
-//       text-transform: uppercase;
-//       background-image: linear-gradient(
-//         120deg,
-//         transparent 0%,
-//         transparent 50%,
-//         white 50%
-//       );
-//       background-size: 220%;
-//       transition: all 0.4s;
-//     }
-//     &:visited {
-//       display: inline-block;
-//       font-size: 3rem;
-//       font-weight: 300;
-//       padding: 1rem 2rem;
-//       color: $color_3;
-//       text-decoration: none;
-//       text-transform: uppercase;
-//       background-image: linear-gradient(
-//         120deg,
-//         transparent 0%,
-//         transparent 50%,
-//         white 50%
-//       );
-//       background-size: 220%;
-//       transition: all 0.4s;
-//     }
-//     &:hover {
-//       color: $color_4;
-//       cursor: pointer;
-//     }
-//     &:active {
-//       color: $color_4;
-//       cursor: pointer;
-//     }
-//   }
-//   .icon {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     width: 3rem;
-//     height: 2px;
-//     background-color: $background-color_4;
-//     display: inline-block;
-//     &::before {
-//       width: 3rem;
-//       height: 2px;
-//       background-color: $background-color_4;
-//       display: inline-block;
-//       content: "";
-//       position: absolute;
-//       left: 0;
-//       transition: all 0.2s;
-//       top: -0.8rem;
-//     }
-//     &::after {
-//       width: 3rem;
-//       height: 2px;
-//       background-color: $background-color_4;
-//       display: inline-block;
-//       content: "";
-//       position: absolute;
-//       left: 0;
-//       transition: all 0.2s;
-//       top: 0.8rem;
-//     }
-//   }
-// }

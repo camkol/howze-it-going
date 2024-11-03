@@ -3,7 +3,7 @@ import "./Projects.css";
 import library from "../library";
 // import AnimatedCanvas from "../AnimatedCanvas";
 
-export default function Projects() {
+export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   // Dont get confused with library.map
 
@@ -39,6 +39,18 @@ export default function Projects() {
         </div>
       </section>
     </>
+  );
+}
+
+export function ProjMobile() {
+  return (
+    <section id="projects" className="container">
+      {" "}
+      {library.map(
+        (project) =>
+          project.star ? <Project project={project} key={project.name} /> : null // If `star` is false or undefined, don't render anything
+      )}
+    </section>
   );
 }
 

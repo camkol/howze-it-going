@@ -4,7 +4,7 @@ import "./Landscape.css";
 import Marquee from "./Marquee";
 import Typewriter from "./Typewriter";
 
-export default function Landscape() {
+export function Landscape() {
   return (
     <>
       <section className="jumbotron" id="megaTop">

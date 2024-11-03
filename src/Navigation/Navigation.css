@@ -61,12 +61,17 @@ header {
   white-space: nowrap;
   color: #ffffff;
 }
-.navbar .list .item.active,
 .navbar .list .item:hover {
   background-color: #fff;
   transition: all 0.3s;
 }
-.navbar .list .item.active .link,
 .navbar .list .item:hover .link {
+  color: #000000;
+}
+.navbar .list .item.active {
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.navbar .list .item.active .link {
   color: #000000;
 }/*# sourceMappingURL=Navigation.css.map */

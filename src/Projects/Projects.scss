@@ -1,28 +1,5 @@
-$color_1: #ffffff;
-$color_2: #fff;
-$color_3: #fbd1d5;
-$color_4: white;
-$color_5: rgba(255, 255, 255, 0.8);
-$color_6: #111;
-$color_7: #eee;
-$color_8: #4480ff;
-$color_9: #4caf50;
-$color_10: #f4b400;
-$color_11: #f44336;
 $font-family_1: "Protest Revolution", sans-serif;
-$font-family_2: Roboto, sans-serif;
-$font-family_3: "Permanent Marker", cursive;
-$font-family_4: "Anton", sans-serif;
-$font-family_5: "Montserrat", sans-serif;
-$background-color_1: #ffffff;
-$background-color_2: #d3d3d3;
-$background-color_3: #fbd1d5;
-$background-color_4: #2a70e0;
-$background-color_5: #eee;
-$background-color_6: #111;
-$background-color_7: #3d3d3d;
-
-$border-color_1: transparent #447fff #447fff transparent;
+$background-color_1: #3d3d3d;
 
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
@@ -60,13 +37,13 @@ $border-color_1: transparent #447fff #447fff transparent;
       block-size: var(--size-14);
       aspect-ratio: var(--ratio-square);
       border-radius: var(--radius-3);
-      box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 1);
+      box-shadow: 0px 0px 8px 2px rgb(255, 255, 255);
     }
     .card {
       width: 90%;
       height: 20rem;
       margin: 1rem auto;
-      background-color: $background-color_7;
+      background-color: $background-color_1;
       .card-body {
         padding: 1rem;
         .imager {

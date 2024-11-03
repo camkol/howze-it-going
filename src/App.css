@@ -7,7 +7,6 @@ section {
   padding-top: 5rem;
   color: #ffffff;
   background-color: #111;
-  box-sizing: border-box;
 }
 
 .titles {
@@ -28,79 +27,49 @@ section {
   border: solid 1px #fff;
 }
 .progStyle .htmlSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #e44d26 0%,
-    #f16529 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #e44d26 0%, #f16529 70%);
 }
 .progStyle .cssSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #264de4 0%,
-    #2965f1 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #264de4 0%, #2965f1 70%);
 }
 .progStyle .reactSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #4eb0ca 0%,
-    #61dafb 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #4eb0ca 0%, #61dafb 70%);
 }
 .progStyle .reduxSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #8800ff 0%,
-    #300177 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #8800ff 0%, #300177 70%);
 }
 .progStyle .jsSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #dabe24 0%,
-    #f0db4f 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #dabe24 0%, #f0db4f 70%);
 }
 .progStyle .jqSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #0868ac 0%,
-    #084672 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #0868ac 0%, #084672 70%);
 }
 .progStyle .bsSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #8f13fe 0%,
-    #6a10f3 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #8f13fe 0%, #6a10f3 70%);
 }
 .progStyle .sassSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #cf649a 0%,
-    #ec7bb5 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #cf649a 0%, #ec7bb5 70%);
 }
 .progStyle .bulmaSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #35efd2 0%,
-    #00d1b2 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #35efd2 0%, #00d1b2 70%);
 }
 .progStyle .psSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #00c8ff 0%,
-    #001d26 70%
-  );
+  background: radial-gradient(ellipse farthest-corner at center center, #00c8ff 0%, #001d26 70%);
 }
 .progStyle .dsSpan {
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #39a5cc 0%,
-    #36687f 70%
-  );
-} /*# sourceMappingURL=App.css.map */
+  background: radial-gradient(ellipse farthest-corner at center center, #39a5cc 0%, #36687f 70%);
+}
+
+@media (max-width: 599px) {
+  .jumbotron {
+    height: 100vh;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 600px) {
+  section {
+    height: 100vh;
+  }
+}/*# sourceMappingURL=App.css.map */

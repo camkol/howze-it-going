@@ -1,6 +1,7 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
+
 #experience {
   display: flex;
 }
@@ -19,8 +20,11 @@
 #experience .experienceTab .employer h2 {
   text-align: center;
 }
-#experience .experienceTab .employer.active,
 #experience .experienceTab .employer:hover {
+  background-color: #ffffff;
+  color: #111;
+}
+#experience .experienceTab .employer.active {
   background-color: #ffffff;
   color: #111;
 }
@@ -43,8 +47,12 @@
 #experience .experienceViewer .experienceTop .experienceTitles {
   margin-top: 2rem;
 }
-#experience .experienceViewer .experienceTop .experienceTitles h3,
-#experience .experienceViewer .experienceTop .experienceTitles h4,
+#experience .experienceViewer .experienceTop .experienceTitles h3 {
+  margin-bottom: 1rem;
+}
+#experience .experienceViewer .experienceTop .experienceTitles h4 {
+  margin-bottom: 1rem;
+}
 #experience .experienceViewer .experienceTop .experienceTitles p {
   margin-bottom: 1rem;
 }

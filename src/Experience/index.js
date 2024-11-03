@@ -3,7 +3,7 @@ import "./Experience.css";
 import { jobData } from "../jobData";
 
 // Experience Component
-export default function Experience() {
+export function Experience() {
   const [selectedJob, setSelectedJob] = useState(null);
 
   const handleSelectJob = (company) => {
