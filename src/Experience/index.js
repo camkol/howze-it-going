@@ -27,6 +27,43 @@ export function Experience() {
     </section>
   );
 }
+
+export function ExpMobile() {
+  return (
+    <div className="experienceMob">
+      {" "}
+      <h2 class="titles">Past Employment</h2>
+      {jobData.map((job, index) => (
+        <Employment key={index} job={job} />
+      ))}
+    </div>
+  );
+}
+
+function Employment({ job }) {
+  const { imageSrc, company, title, duration, responsibilities } = job;
+  return (
+    <div className="experienceViewer">
+      <div className="experienceTop">
+        <div className="employerImage">
+          <img src={imageSrc} alt={company} />
+        </div>
+        <div className="experienceTitles">
+          <h3>{title}</h3>
+          <h4>{company}</h4>
+          <p>{duration}</p>
+        </div>
+      </div>
+      <hr />
+      <ul>
+        {responsibilities.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function ExperienceTabs({ jobData, onSelectJob, selectedJob }) {
   const styleHeight = { height: `${100 / jobData.length}%` };
 

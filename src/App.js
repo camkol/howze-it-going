@@ -5,7 +5,7 @@ import Scroll from "./Scroll";
 import { Landscape } from "./Landscape";
 import { Projects, ProjMobile } from "./Projects";
 import { Education, EduMobile } from "./Education";
-import { Experience } from "./Experience";
+import { Experience, ExpMobile } from "./Experience";
 import { useMediaQuery } from "react-responsive";
 import transcript from "./transcript";
 // import Hamburger from "./Hamburger";
@@ -42,6 +42,7 @@ function App() {
           <Landscape />
           <ProjMobile isMobile={isMobile} />
           <EduMobile isMobile={isMobile} transcript={transcript} />
+          <ExpMobile />
         </>
       )}
     </div>
