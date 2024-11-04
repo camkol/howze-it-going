@@ -47,7 +47,7 @@
 #education .institution {
   margin-left: 1rem;
 }
-#education .institution .courseList {
+#education .institution .courseList .course {
   margin-left: 1rem;
 }
 #education .institution .courseList .course .close {
@@ -60,5 +60,15 @@
 @media (max-width: 599px) {
   #education {
     display: block;
+  }
+  #education .institution {
+    margin: 0;
+  }
+  #education .institution .schoolImage {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  #education .institution .close {
+    display: none;
   }
 }/*# sourceMappingURL=Education.css.map */

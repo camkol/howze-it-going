@@ -32,14 +32,19 @@ export function Education() {
 }
 
 export function EduMobile({ transcript, isMobile }) {
+  const [curOpen, setCurOpen] = useState(null);
+
   return (
     <section id="education" className="container">
       {Object.entries(transcript).map(([institution, details]) => (
         <Institution
           key={institution}
+          uni={institution}
           name={{ name: institution }}
           details={details}
           isMobile={isMobile}
+          curOpen={curOpen}
+          onOpen={setCurOpen}
         />
       ))}
     </section>
@@ -98,29 +103,41 @@ const EducationViewer = ({ institute }) => {
   );
 };
 
-const Institution = ({ name, details, isMobile }) => {
+const Institution = ({ name, details, isMobile, curOpen, onOpen, uni }) => {
+  const isOpen = curOpen === uni;
+
+  const handleOpen = () => {
+    onOpen(isOpen ? null : uni);
+  };
+
   return (
     <div className="institution">
       {isMobile ? (
-        <img src={details.image} alt={name} />
+        <div className="schoolImage" onClick={handleOpen}>
+          {" "}
+          <img src={details.image} alt={name} />{" "}
+          <p className="duration">({details.year})</p>
+        </div>
       ) : (
-        <h2>
-          {name} ({details.year})
-        </h2>
+        <>
+          <h2>{name}</h2> <p className="duration">({details.year})</p>
+        </>
       )}
 
-      <p>({details.year})</p>
-      <hr />
-      <CourseList courses={details.courses || details.degrees} />
+      <CourseList
+        courses={details.courses || details.degrees}
+        instOpen={isOpen}
+      />
     </div>
   );
 };
 
-const CourseList = ({ courses }) => {
+const CourseList = ({ courses, instOpen }) => {
   const [curOpen, setCurOpen] = useState(null);
 
   return (
-    <div className="courseList">
+    <div className={`courseList${instOpen ? "" : " close"}`}>
+      <hr />
       {courses.map((course, index) => (
         <Course
           key={index}

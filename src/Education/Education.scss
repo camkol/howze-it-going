@@ -49,8 +49,8 @@ $background-color_2: #ffffff;
   .institution {
     margin-left: 1rem;
     .courseList {
-      margin-left: 1rem;
       .course {
+        margin-left: 1rem;
         .close {
           display: none;
         }
@@ -65,5 +65,15 @@ $background-color_2: #ffffff;
 @media (max-width: 599px) {
   #education {
     display: block;
+    .institution {
+      margin: 0;
+      .schoolImage {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .close {
+        display: none;
+      }
+    }
   }
 }
