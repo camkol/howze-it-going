@@ -92,4 +92,18 @@ $background-color_1: #ffffff;
 }
 
 @media (max-width: 599px) {
+  #experience {
+    .experienceMob {
+      .experienceTop {
+        p {
+          margin: 1rem;
+        }
+      }
+      .experienceView {
+        .close {
+          display: none;
+        }
+      }
+    }
+  }
 }

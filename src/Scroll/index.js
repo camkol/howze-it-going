@@ -33,16 +33,16 @@ function Scroll() {
   return (
     <>
       {isVisible && (
-        <a
-          href="#"
+        <button
           className="return-to-top"
           onClick={(e) => {
             e.preventDefault();
             scrollToTop();
           }}
+          aria-label="Scroll to top"
         >
           <i className="fa-solid fa-chevron-up"></i>
-        </a>
+        </button>
       )}
     </>
   );

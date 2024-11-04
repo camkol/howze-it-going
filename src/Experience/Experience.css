@@ -90,4 +90,13 @@
   position: sticky;
   z-index: 100;
   top: -10px;
+}
+
+@media (max-width: 599px) {
+  #experience .experienceMob .experienceTop p {
+    margin: 1rem;
+  }
+  #experience .experienceMob .experienceView .close {
+    display: none;
+  }
 }/*# sourceMappingURL=Experience.css.map */

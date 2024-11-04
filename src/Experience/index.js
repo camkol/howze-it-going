@@ -29,37 +29,54 @@ export function Experience() {
 }
 
 export function ExpMobile() {
+  const [curOpen, setCurOpen] = useState(null);
+
   return (
-    <div className="experienceMob">
-      {" "}
-      <h2 class="titles">Past Employment</h2>
-      {jobData.map((job, index) => (
-        <Employment key={index} job={job} />
-      ))}
-    </div>
+    <section className="container" id="experience">
+      <div className="experienceMob">
+        {" "}
+        <h2 class="titles">Past Employment</h2>
+        {jobData.map((job, index) => (
+          <Employment
+            key={index}
+            num={index}
+            job={job}
+            curOpen={curOpen}
+            onOpen={setCurOpen}
+          />
+        ))}
+      </div>
+    </section>
   );
 }
 
-function Employment({ job }) {
+function Employment({ job, curOpen, onOpen, num }) {
   const { imageSrc, company, title, duration, responsibilities } = job;
+
+  const isOpen = curOpen === num;
+
+  const handleOpen = () => {
+    onOpen(isOpen ? null : num);
+  };
+
   return (
-    <div className="experienceViewer">
-      <div className="experienceTop">
+    <div className="experienceView">
+      <div className="experienceTop" onClick={handleOpen}>
         <div className="employerImage">
           <img src={imageSrc} alt={company} />
         </div>
-        <div className="experienceTitles">
-          <h3>{title}</h3>
-          <h4>{company}</h4>
-          <p>{duration}</p>
-        </div>
+        <p>{duration}</p>
       </div>
-      <hr />
-      <ul>
-        {responsibilities.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <div className={`experienceTitles${isOpen ? "" : " close"}`}>
+        <h3>{title}</h3>
+        <h4>{company}</h4>
+        <hr />
+        <ul>
+          {responsibilities.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>{" "}
+      </div>
     </div>
   );
 }
