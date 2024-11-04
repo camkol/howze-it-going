@@ -45,19 +45,25 @@ $background-color_2: #ffffff;
   .educationViewer {
     width: 60%;
     overflow: scroll;
-    .institution {
+  }
+  .institution {
+    margin-left: 1rem;
+    .courseList {
       margin-left: 1rem;
-      .courseList {
-        margin-left: 1rem;
-        .course {
-          .close {
-            display: none;
-          }
+      .course {
+        .close {
+          display: none;
         }
       }
     }
   }
   .titles {
     font-family: $font-family_1;
+  }
+}
+
+@media (max-width: 599px) {
+  #education {
+    display: block;
   }
 }

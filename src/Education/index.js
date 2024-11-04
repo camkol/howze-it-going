@@ -31,6 +31,21 @@ export function Education() {
   );
 }
 
+export function EduMobile({ transcript, isMobile }) {
+  return (
+    <section id="education" className="container">
+      {Object.entries(transcript).map(([institution, details]) => (
+        <Institution
+          key={institution}
+          name={{ name: institution }}
+          details={details}
+          isMobile={isMobile}
+        />
+      ))}
+    </section>
+  );
+}
+
 function EducationTabs({
   transcript,
   onSelectInstitution,
@@ -83,12 +98,18 @@ const EducationViewer = ({ institute }) => {
   );
 };
 
-const Institution = ({ name, details }) => {
+const Institution = ({ name, details, isMobile }) => {
   return (
     <div className="institution">
-      <h2>
-        {name} ({details.year})
-      </h2>
+      {isMobile ? (
+        <img src={details.image} alt={name} />
+      ) : (
+        <h2>
+          {name} ({details.year})
+        </h2>
+      )}
+
+      <p>({details.year})</p>
       <hr />
       <CourseList courses={details.courses || details.degrees} />
     </div>

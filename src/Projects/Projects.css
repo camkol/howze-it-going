@@ -5,6 +5,21 @@
 #projects .titles {
   font-family: "Protest Revolution", sans-serif;
 }
+#projects .buttons a .button {
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 15%;
+  background: linear-gradient(to right, #0091ff 15%, #00436b 100%);
+}
+#projects .buttons a .button:hover {
+  background: linear-gradient(to right, #72c2ff 15%, #255672 100%);
+}
+#projects .buttons a .button:active {
+  background: linear-gradient(to right, rgba(0, 145, 255, 0.4823529412) 15%, rgba(0, 68, 107, 0.337254902) 100%);
+}
 
 .imagist {
   width: 100%;
@@ -117,15 +132,6 @@
   .card .card-body .card-title {
     margin-top: 1rem;
     margin-left: 1rem;
-  }
-  .card .card-body .card-buttons a .card-button {
-    margin: 0.5rem;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 15%;
-    background: linear-gradient(to right, #0091ff 15%, #00436b 100%);
   }
   .progStyle {
     margin-top: 1rem;

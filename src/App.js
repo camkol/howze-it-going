@@ -4,9 +4,10 @@ import { Navigation, NavMobile } from "./Navigation";
 import Scroll from "./Scroll";
 import { Landscape } from "./Landscape";
 import { Projects, ProjMobile } from "./Projects";
-import { Education } from "./Education";
+import { Education, EduMobile } from "./Education";
 import { Experience } from "./Experience";
 import { useMediaQuery } from "react-responsive";
+import transcript from "./transcript";
 // import Hamburger from "./Hamburger";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <NavMobile />
           <Landscape />
           <ProjMobile isMobile={isMobile} />
+          <EduMobile isMobile={isMobile} transcript={transcript} />
         </>
       )}
     </div>

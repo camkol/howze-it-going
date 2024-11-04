@@ -44,15 +44,21 @@
   width: 60%;
   overflow: scroll;
 }
-#education .educationViewer .institution {
+#education .institution {
   margin-left: 1rem;
 }
-#education .educationViewer .institution .courseList {
+#education .institution .courseList {
   margin-left: 1rem;
 }
-#education .educationViewer .institution .courseList .course .close {
+#education .institution .courseList .course .close {
   display: none;
 }
 #education .titles {
   font-family: "Permanent Marker", cursive;
+}
+
+@media (max-width: 599px) {
+  #education {
+    display: block;
+  }
 }/*# sourceMappingURL=Education.css.map */

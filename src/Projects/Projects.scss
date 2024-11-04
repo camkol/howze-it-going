@@ -9,6 +9,25 @@ $background-color_1: #3d3d3d;
   .titles {
     font-family: $font-family_1;
   }
+  .buttons {
+    a {
+      .button {
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 15%;
+        background: linear-gradient(to right, #0091ff 15%, #00436b 100%);
+        &:hover {
+          background: linear-gradient(to right, #72c2ff 15%, #255672 100%);
+        }
+        &:active {
+          background: linear-gradient(to right, #0091ff7b 15%, #00446b56 100%);
+        }
+      }
+    }
+  }
 }
 .imagist {
   width: 100%;
@@ -116,19 +135,6 @@ $background-color_1: #3d3d3d;
       .card-title {
         margin-top: 1rem;
         margin-left: 1rem;
-      }
-      .card-buttons {
-        a {
-          .card-button {
-            margin: 0.5rem;
-            padding: 1rem;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #fff;
-            border-radius: 15%;
-            background: linear-gradient(to right, #0091ff 15%, #00436b 100%);
-          }
-        }
       }
     }
   }

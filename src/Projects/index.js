@@ -152,16 +152,7 @@ function Project({ project, onSelectProject, isMobile }) {
           />
         </div>
         <h5 className="card-title">{project.name}</h5>
-        {isMobile && (
-          <div className="card-buttons">
-            <a href={project.gitHub} target="_blank" rel="noreferrer noopener">
-              <button className="card-button presser">GitHub</button>
-            </a>
-            <a href={project.site} target="_blank" rel="noreferrer noopener">
-              <button className="card-button presser">View</button>
-            </a>
-          </div>
-        )}
+        {isMobile && <Buttons gitHub={project.gitHub} site={project.site} />}
 
         <hr />
         <p className="progStyle">
@@ -182,27 +173,7 @@ function ProjectPreview({ project }) {
       <div className="previewer-content">
         <div className="previewer-dialog">
           <div className="previewer-links">
-            <h5>
-              <a
-                className="card-link"
-                href={project.gitHub}
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                GitHub
-              </a>
-            </h5>
-            <hr />
-            <h4>
-              <a
-                className="card-link"
-                href={project.site}
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                View Page
-              </a>
-            </h4>
+            <Buttons gitHub={project.gitHub} site={project.site} />
           </div>
         </div>
         <div className="previewer-process">
@@ -214,6 +185,19 @@ function ProjectPreview({ project }) {
           </ul>
         </div>
       </div>
+    </div>
+  );
+}
+
+function Buttons({ gitHub, site }) {
+  return (
+    <div className="buttons">
+      <a href={gitHub} target="_blank" rel="noreferrer noopener">
+        <button className="button">GitHub</button>
+      </a>
+      <a href={site} target="_blank" rel="noreferrer noopener">
+        <button className="button">View</button>
+      </a>
     </div>
   );
 }
