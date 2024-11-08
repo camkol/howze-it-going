@@ -17,7 +17,7 @@
   align-items: center;
   transition: all 0.3s;
 }
-#experience .experienceTab .employer h2 {
+#experience .experienceTab .employer h3 {
   text-align: center;
 }
 #experience .experienceTab .employer:hover {

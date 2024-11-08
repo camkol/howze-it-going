@@ -18,6 +18,7 @@ $background-color_1: #111;
 
 .app {
   background-color: $background-color_1;
+  width: 100%;
 }
 section {
   padding-top: 5rem;
@@ -125,5 +126,19 @@ section {
 @media (min-width: 600px) {
   section {
     height: 100vh;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.1rem;
   }
 }

@@ -35,7 +35,7 @@ export function ExpMobile() {
     <section className="container" id="experience">
       <div className="experienceMob">
         {" "}
-        <h2 class="titles">Past Employment</h2>
+        <h2 className="titles">Past Employment</h2>
         {jobData.map((job, index) => (
           <Employment
             key={index}
@@ -111,7 +111,7 @@ function Employer({ company, onSelectJob, style, selectedJob }) {
       style={style}
       id=""
     >
-      <h2>{company}</h2>
+      <h3>{company}</h3>
     </div>
   );
 }
