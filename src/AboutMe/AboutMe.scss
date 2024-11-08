@@ -1,0 +1,37 @@
+#aboutMe {
+  .aboutRow {
+    display: flex;
+    height: 100%;
+    .picHolder {
+      width: 50%;
+      height: 100%;
+      img {
+        margin: auto;
+        width: auto;
+        max-height: 80vh;
+      }
+    }
+    .textHolder {
+      width: 50%;
+      height: 100%;
+      overflow: scroll;
+      p {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  #aboutMe {
+    .aboutRow {
+      display: block;
+      .picHolder {
+        width: 100%;
+      }
+      .textHolder {
+        width: 100%;
+      }
+    }
+  }
+}

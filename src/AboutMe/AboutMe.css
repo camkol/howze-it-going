@@ -1,0 +1,33 @@
+#aboutMe .aboutRow {
+  display: flex;
+  height: 100%;
+}
+#aboutMe .aboutRow .picHolder {
+  width: 50%;
+  height: 100%;
+}
+#aboutMe .aboutRow .picHolder img {
+  margin: auto;
+  width: auto;
+  max-height: 80vh;
+}
+#aboutMe .aboutRow .textHolder {
+  width: 50%;
+  height: 100%;
+  overflow: scroll;
+}
+#aboutMe .aboutRow .textHolder p {
+  margin: 1rem;
+}
+
+@media (max-width: 599px) {
+  #aboutMe .aboutRow {
+    display: block;
+  }
+  #aboutMe .aboutRow .picHolder {
+    width: 100%;
+  }
+  #aboutMe .aboutRow .textHolder {
+    width: 100%;
+  }
+}/*# sourceMappingURL=AboutMe.css.map */

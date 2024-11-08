@@ -8,6 +8,7 @@ import { Education, EduMobile } from "./Education";
 import { Experience, ExpMobile } from "./Experience";
 import { useMediaQuery } from "react-responsive";
 import transcript from "./transcript";
+import { AboutMe } from "./AboutMe";
 // import Hamburger from "./Hamburger";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           {selectedSection === "Projects" && <Projects />}
           {selectedSection === "Education" && <Education />}
           {selectedSection === "Employment" && <Experience />}
+          {selectedSection === "About Me" && <AboutMe />}
         </>
       )}
       {isMobile && (
@@ -43,6 +45,7 @@ function App() {
           <ProjMobile isMobile={isMobile} />
           <EduMobile isMobile={isMobile} transcript={transcript} />
           <ExpMobile />
+          <AboutMe isMobile={isMobile} />
         </>
       )}
     </div>
