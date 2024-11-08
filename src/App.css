@@ -2,6 +2,14 @@
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .app {
   background-color: #111;
 }
@@ -9,6 +17,7 @@
 section {
   padding-top: 5rem;
   color: #ffffff;
+  animation: fadeIn 1000ms ease;
 }
 
 .titles {

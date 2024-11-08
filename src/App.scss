@@ -6,12 +6,23 @@ $background-color_1: #111;
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 /*# sourceMappingURL=App.css.map */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .app {
   background-color: $background-color_1;
 }
 section {
   padding-top: 5rem;
   color: $color_1;
+  animation: fadeIn 1000ms ease;
 }
 .titles {
   font-size: 2rem;
