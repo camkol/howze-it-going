@@ -12,6 +12,8 @@
   justify-content: center;
   transition: all 0.3s ease;
   z-index: 99;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-width: 1px;
 }
 
 .return-to-top i {

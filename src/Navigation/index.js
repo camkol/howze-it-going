@@ -23,7 +23,7 @@ export function NavMobile() {
 
 function Name() {
   return (
-    <a className="roll-out-text" href="index.html">
+    <a className="roll-out-text" href="/">
       <h1 id="name">Cameron Howze</h1>
     </a>
   );
@@ -36,21 +36,20 @@ function Menu({ onSelectSection }) {
     { label: "Projects", href: "#projects" },
     { label: "Education", href: "#education" },
     { label: "Employment", href: "#experience" },
-    { label: "About Me", href: "aboutMe" },
+    { label: "About Me", href: "#aboutMe" },
     { label: "Library", href: "https://camkol.github.io/library.html" },
   ];
 
   // Effect to set active link based on hash
   useEffect(() => {
     const handleHashChange = () => {
-      const newHash = window.location.hash || "#home"; // Fallback in case there’s no hash
-      setActiveLink(newHash);
-      console.log("Hash changed to:", newHash); // Debugging log
+      const currentHash = window.location.hash || "#home"; // Fallback if no hash
+      setActiveLink(currentHash);
     };
 
-    window.addEventListener("hashchange", handleHashChange);
-    handleHashChange(); // Set initial active link on load
+    handleHashChange(); // Run on initial load
 
+    window.addEventListener("hashchange", handleHashChange);
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
     };

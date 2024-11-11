@@ -52,9 +52,11 @@ function App() {
         window.open("https://www.instagram.com/koliyus83/", "_blank"),
       src: instagram,
     },
+
     {
-      onClick: () => window.open("https://github.com/camkol", "_blank"),
-      src: github,
+      onClick: () =>
+        window.open("https://www.facebook.com/wondering.thomas", "_blank"),
+      src: facebook,
     },
     {
       onClick: () =>
@@ -65,9 +67,8 @@ function App() {
       src: linkedin,
     },
     {
-      onClick: () =>
-        window.open("https://www.facebook.com/wondering.thomas", "_blank"),
-      src: facebook,
+      onClick: () => window.open("https://github.com/camkol", "_blank"),
+      src: github,
     },
     {
       onClick: () => window.open("mailto:cameronhowze4@outlook.com", "_blank"),
