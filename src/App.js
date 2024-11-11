@@ -12,13 +12,14 @@ import { AboutMe } from "./AboutMe";
 import FloatingButtons from "./FloatingButtons";
 // import Hamburger from "./Hamburger";
 
+// import dribbble from "./assets/dribbble.svg";
+// import medium from "./assets/medium.svg";
+// import spotify from "./assets/spotify.svg";
+// import twitter from "./assets/twitter.svg";
+
 import instagram from "./assets/instagram.svg";
 import github from "./assets/github.svg";
-import dribbble from "./assets/dribbble.svg";
 import linkedin from "./assets/linkedin.svg";
-import medium from "./assets/medium.svg";
-import spotify from "./assets/spotify.svg";
-import twitter from "./assets/twitter.svg";
 import facebook from "./assets/facebook.svg";
 import mail from "./assets/mail.svg";
 
