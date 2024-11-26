@@ -7,7 +7,7 @@ export function AboutMe({ isMobile }) {
       {isMobile && <h2 className="titles">About Me</h2>}
       <div className="aboutRow">
         <div className="picHolder">
-          <img id="profilePic" src="images/profile.jpg" alt="Profile" />
+          <img id="profilePic" src="images/self.jpg" alt="Profile" />
         </div>
         <div className="textHolder">
           <p>
