@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navigation.css";
+import { Button } from "../Button";
 
 export function Navigation({ onSelectSection }) {
   return (
@@ -76,7 +77,8 @@ function List({ item, isActive, onSelectSection }) {
       onClick={() => onSelectSection(item.label)}
     >
       <a className="link" href={item.href}>
-        <h4>{item.label}</h4>
+        {/* <h4>{item.label}</h4> */}
+        <Button secondary>{item.label}</Button>
       </a>
     </li>
   );
