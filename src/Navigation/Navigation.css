@@ -66,10 +66,8 @@ header {
 .navbar .list .item.active {
   transition: all 0.3s;
 }
-.navbar .list .item.active .link {
-  color: #000000;
-}
 .navbar .list .item.active .link .dir-control {
+  color: #000000;
   font-size: 2rem !important;
   background-color: #fff;
 }

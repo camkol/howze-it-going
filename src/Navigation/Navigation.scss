@@ -76,8 +76,8 @@ header {
     .item.active {
       transition: all 0.3s;
       .link {
-        color: $color_2;
         .dir-control {
+          color: $color_2;
           font-size: 2rem !important;
           background-color: $background-color_2;
         }
