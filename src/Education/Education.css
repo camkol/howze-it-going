@@ -36,6 +36,7 @@
 }
 #education .educationTab .tab:hover {
   background-color: #ffffff;
+  transition: all 1s;
 }
 #education .educationTab .tab.active {
   background-color: #ffffff;
@@ -47,11 +48,27 @@
 #education .institution {
   margin-left: 1rem;
 }
+#education .institution .courseList .open .courseName {
+  color: blue;
+}
 #education .institution .courseList .course {
   margin-left: 1rem;
+  overflow: hidden;
 }
-#education .institution .courseList .course .close {
-  display: none;
+#education .institution .courseList .course h3:hover {
+  color: blue;
+  transition: all 1s;
+}
+#education .institution .courseList .course .lessonModule {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; /* Smooth slide effect */
+}
+#education .institution .courseList .course.open .lessonModule {
+  max-height: 500px; /* Set to a value larger than the content height */
+}
+#education .institution .courseList .course.close .lessonModule {
+  max-height: 0; /* Collapse the content */
 }
 #education .titles {
   font-family: "Permanent Marker", cursive;

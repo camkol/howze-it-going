@@ -160,9 +160,11 @@ const Course = ({ course, num, curOpen, onOpen }) => {
   };
 
   return (
-    <div className="course" onClick={handleOpen}>
-      <h3 className="presser">{course.courseName || course.degreeName}</h3>
-      <div className={`lessonModule${isOpen ? "" : " close"}`}>
+    <div className={`course ${isOpen ? "open" : "close"}`} onClick={handleOpen}>
+      <h3 className="presser courseName">
+        {course.courseName || course.degreeName}
+      </h3>
+      <div className="lessonModule">
         {course.certificate && (
           <a
             href={course.certificate}

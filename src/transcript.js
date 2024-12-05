@@ -54,44 +54,44 @@ const transcript = {
         certificate:
           "https://www.codecademy.com/profiles/koliyus/certificates/5c9ce0b45f1de879ebcad4fd",
         modules: {
-          "1. Introduction to JavaScript and Building Apps": [
+          "Introduction to JavaScript and Building Apps": [
             "JavaScript Introduction & React Overview",
             "Setting up a Web Development Environment",
           ],
-          "2. JavaScript Functions, Arrays, and Loops": [
+          "JavaScript Functions, Arrays, and Loops": [
             "Conditionals",
             "Functions",
             "Arrays",
             "Loops",
           ],
-          "3. JavaScript Iterators, Objects, and Classes": [
+          "JavaScript Iterators, Objects, and Classes": [
             "Iterators",
             "Objects",
             "Classes",
           ],
-          "4. Modern JavaScript: Modules and Browser Compatibility": [
+          "Modern JavaScript: Modules and Browser Compatibility": [
             "ES6 Modules",
             "Browser Compatibility and Transpilation",
           ],
-          "5. Introduction to React": [
+          "Introduction to React": [
             "JSX",
             "React Components",
             "Ravenous: Part 1",
           ],
-          "6. React: Components Interacting": [
+          "React: Components Interacting": [
             "Components and Props",
             "Ravenous: Part 2",
           ],
-          "7. React: Component State": [
+          "React: Component State": [
             "Hooks",
             "React Programming Patterns",
             "Ravenous: Part 3",
           ],
-          "8. AJAX Requests and API Interactions": [
+          "AJAX Requests and API Interactions": [
             "HTTP Requests",
             "Ravenous: Part 4",
           ],
-          "9. React Capstone": [
+          "React Capstone": [
             "React Styles",
             "Lifecycle Methods",
             "React Forms",

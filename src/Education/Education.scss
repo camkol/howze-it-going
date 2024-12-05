@@ -36,6 +36,7 @@ $background-color_2: #ffffff;
       }
       &:hover {
         background-color: $background-color_2;
+        transition: all 1s;
       }
     }
     .tab.active {
@@ -49,14 +50,36 @@ $background-color_2: #ffffff;
   .institution {
     margin-left: 1rem;
     .courseList {
+      .open {
+        .courseName {
+          color: blue;
+        }
+      }
       .course {
         margin-left: 1rem;
-        .close {
-          display: none;
+        overflow: hidden;
+        h3:hover {
+          color: blue;
+          transition: all 1s;
+        }
+
+        .lessonModule {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s ease-in-out; /* Smooth slide effect */
+        }
+
+        &.open .lessonModule {
+          max-height: 500px; /* Set to a value larger than the content height */
+        }
+
+        &.close .lessonModule {
+          max-height: 0; /* Collapse the content */
         }
       }
     }
   }
+
   .titles {
     font-family: $font-family_1;
   }
