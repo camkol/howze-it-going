@@ -5,6 +5,7 @@ export default function Marquee() {
   const icons = [
     "fab fa-react",
     "images/icons/redux(front).png",
+    "images/icons/mui(front).png",
 
     "fab fa-js",
     "fab fa-node",
@@ -12,10 +13,11 @@ export default function Marquee() {
     "images/icons/jQuery(front)-logo.png",
     "fab fa-php",
     "images/icons/command-line(front).png",
-    "fab fa-html5",
+    "images/icons/tailwind(front).png",
     "fab fa-bootstrap",
-    "fab fa-css3",
     "fab fa-sass",
+    "fab fa-html5",
+    "fab fa-css3",
     "images/icons/universal-access(front).png",
     "images/icons/Photoshop(front).png",
     "images/icons/visualcode(front).png",

@@ -9,6 +9,8 @@ import { Experience, ExpMobile } from "./Experience";
 import { useMediaQuery } from "react-responsive";
 import transcript from "./transcript";
 import { AboutMe } from "./AboutMe";
+import { Storage } from "./Storage";
+
 import FloatingButtons from "./FloatingButtons";
 // import Hamburger from "./Hamburger";
 
@@ -17,9 +19,9 @@ import FloatingButtons from "./FloatingButtons";
 // import spotify from "./assets/spotify.svg";
 // import twitter from "./assets/twitter.svg";
 
+import linkedin from "./assets/linkedin.svg";
 import instagram from "./assets/instagram.svg";
 import github from "./assets/github.svg";
-import linkedin from "./assets/linkedin.svg";
 import facebook from "./assets/facebook.svg";
 import mail from "./assets/mail.svg";
 
@@ -87,7 +89,6 @@ function App() {
         degree={90}
         distance={-100}
       />
-      {/* <Hamburger /> */}
       {isDesktop && (
         <>
           <Navigation
@@ -100,6 +101,7 @@ function App() {
           {selectedSection === "Education" && <Education />}
           {selectedSection === "Employment" && <Experience />}
           {selectedSection === "About Me" && <AboutMe />}
+          {selectedSection === "Storage" && <Storage />}
         </>
       )}
       {isMobile && (
@@ -111,8 +113,10 @@ function App() {
           <EduMobile isMobile={isMobile} transcript={transcript} />
           <ExpMobile />
           <AboutMe isMobile={isMobile} />
+          <Storage isMobile={isMobile} />
         </>
       )}
+      {/* <Hamburger /> */}
     </div>
   );
 }

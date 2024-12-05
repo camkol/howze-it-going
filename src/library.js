@@ -10,7 +10,7 @@ const library = [
   },
   {
     name: "Accordion Component",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -19,7 +19,7 @@ const library = [
   },
   {
     name: "Adopt a pet",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -37,7 +37,7 @@ const library = [
   },
   {
     name: "Animal Fun Facts(needs work)",
-    image: "images/projects/coming-soon.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -55,7 +55,7 @@ const library = [
   },
   {
     name: "Appointment Planner",
-    image: "images/projects/coming-soon.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -64,7 +64,7 @@ const library = [
   },
   {
     name: "Authorization Form(needs work)",
-    image: "images/projects/coming-soon.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -370,7 +370,7 @@ const library = [
   },
   {
     name: "Developer Profile",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -397,7 +397,7 @@ const library = [
   },
   {
     name: "E- Commerce",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "collaborative",
     star: false,
     language: ["react", "javascript", "html", "css", "sass"],
@@ -406,7 +406,7 @@ const library = [
   },
   {
     name: "Eat n' Split",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -424,7 +424,7 @@ const library = [
   },
   {
     name: "Expense Tracker",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -577,7 +577,7 @@ const library = [
   },
   {
     name: "Jammming",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: true,
     language: ["react", "javascript", "html", "css"],
@@ -641,7 +641,7 @@ const library = [
   },
   {
     name: "Markdown Editor",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -867,7 +867,7 @@ const library = [
   },
   {
     name: "Play Around First App",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html"],
@@ -876,7 +876,7 @@ const library = [
   },
   {
     name: "Pomodoro",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -894,7 +894,7 @@ const library = [
   },
   {
     name: "Profile Video Example(React Profiler)",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -912,7 +912,7 @@ const library = [
   },
   {
     name: "Pure React(needs work)",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html"],
@@ -947,7 +947,7 @@ const library = [
   },
   {
     name: "React Router Lesson",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -965,7 +965,7 @@ const library = [
   },
   {
     name: "Recipes",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["redux", "react", "javascript", "html", "css"],
@@ -1010,7 +1010,7 @@ const library = [
   },
   {
     name: "Saucey Tango Food Order Form",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],
@@ -1209,7 +1209,7 @@ const library = [
   },
   {
     name: "Tip Calcutor",
-    image: "images/projects/comingson.jpg",
+    image: "images/projects/comingsoon.jpg",
     type: "classPersonal",
     star: false,
     language: ["react", "javascript", "html", "css"],

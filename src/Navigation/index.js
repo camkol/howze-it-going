@@ -38,7 +38,9 @@ function Menu({ onSelectSection }) {
     { label: "Education", href: "#education" },
     { label: "Employment", href: "#experience" },
     { label: "About Me", href: "#aboutMe" },
-    { label: "Library", href: "https://camkol.github.io/library.html" },
+
+    { label: "Storage", href: "#storage" },
+    // { label: "Library", href: "https://camkol.github.io/library.html" },
   ];
 
   // Effect to set active link based on hash
