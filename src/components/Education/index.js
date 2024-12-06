@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Education.css";
-import transcript from "../transcript";
 
-export function Education() {
+export function Education({ transcript }) {
   const [selectedInstitution, setSelectedInstitution] = useState(null);
 
   const handleSelectInstitution = (name) => {

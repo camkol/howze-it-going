@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
-import library from "../library";
+import library from "../../library";
 // import AnimatedCanvas from "../AnimatedCanvas";
 
 export function Projects() {

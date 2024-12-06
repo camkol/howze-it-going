@@ -3,7 +3,7 @@ import Scrollbar from "smooth-scrollbar";
 // import OverscrollPlugin from "smooth-scrollbar/plugins/overscroll";
 import $ from "jquery";
 import "./Storage.css";
-import library from "../library";
+import library from "../../library";
 
 export function Storage({ isMobile }) {
   useEffect(() => {

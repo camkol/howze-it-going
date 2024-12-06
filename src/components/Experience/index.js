@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Experience.css";
-import { jobData } from "../jobData";
+import { jobData } from "../../jobData";
 
 // Experience Component
 export function Experience() {

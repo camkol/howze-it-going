@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-import "./App.css";
-import { Navigation, NavMobile } from "./Navigation";
-import Scroll from "./Scroll";
-import { Landscape } from "./Landscape";
-import { Projects, ProjMobile } from "./Projects";
-import { Education, EduMobile } from "./Education";
-import { Experience, ExpMobile } from "./Experience";
 import { useMediaQuery } from "react-responsive";
-import transcript from "./transcript";
-import { AboutMe } from "./AboutMe";
-import { Storage } from "./Storage";
 
-import FloatingButtons from "./FloatingButtons";
-// import Hamburger from "./Hamburger";
+import "./App.css";
+
+import { Navigation, NavMobile } from "./components/Navigation";
+import { Landscape } from "./components/Landscape";
+import { Projects, ProjMobile } from "./components/Projects";
+import { Education, EduMobile } from "./components/Education";
+import { Experience, ExpMobile } from "./components/Experience";
+import { AboutMe } from "./components/AboutMe";
+import { Storage } from "./components/Storage";
+import Scroll from "./components/Scroll";
+import FloatingButtons from "./components/FloatingButtons";
+
+import transcript from "./transcript";
 
 // import dribbble from "./assets/dribbble.svg";
 // import medium from "./assets/medium.svg";
@@ -98,7 +99,9 @@ function App() {
 
           {selectedSection === "Home" && <Landscape />}
           {selectedSection === "Projects" && <Projects />}
-          {selectedSection === "Education" && <Education />}
+          {selectedSection === "Education" && (
+            <Education transcript={transcript} />
+          )}
           {selectedSection === "Employment" && <Experience />}
           {selectedSection === "About Me" && <AboutMe />}
           {selectedSection === "Storage" && <Storage />}
