@@ -27,8 +27,8 @@ header {
   position: absolute;
   display: flex;
   align-items: center;
-  background-color: transparent;
   justify-content: space-between;
+  background-color: transparent;
 }
 .navbar .roll-out-text {
   text-decoration: none;
@@ -62,16 +62,11 @@ header {
   color: #ffffff;
 }
 .navbar .list .item .link .dir-control {
-  font-size: 2rem !important;
+  font-size: 2rem;
   width: auto !important;
 }
 .navbar .list .item.active {
   transition: all 0.3s;
-}
-.navbar .list .item.active .link .dir-control {
-  color: #000000;
-  font-size: 2rem !important;
-  background-color: #fff;
 }
 
 @media (min-width: 600px) and (max-width: 1100px) {
@@ -80,5 +75,10 @@ header {
   }
   .navbar .list .item {
     padding: 0 0.5rem;
+  }
+  .navbar .list .item .link .dir-control {
+    padding: 4px;
+    height: 25px;
+    font-size: 1rem !important;
   }
 }/*# sourceMappingURL=Navigation.css.map */
