@@ -14,6 +14,7 @@ import Scroll from "./components/Scroll";
 import FloatingButtons from "./components/FloatingButtons";
 
 import transcript from "./transcript";
+import library from "./library.json";
 
 // import dribbble from "./assets/dribbble.svg";
 // import medium from "./assets/medium.svg";
@@ -98,13 +99,13 @@ function App() {
           />
 
           {selectedSection === "Home" && <Landscape />}
-          {selectedSection === "Projects" && <Projects />}
+          {selectedSection === "Projects" && <Projects library={library} />}
           {selectedSection === "Education" && (
             <Education transcript={transcript} />
           )}
           {selectedSection === "Employment" && <Experience />}
           {selectedSection === "About Me" && <AboutMe />}
-          {selectedSection === "Storage" && <Storage />}
+          {selectedSection === "Storage" && <Storage library={library} />}
         </>
       )}
       {isMobile && (
@@ -112,11 +113,11 @@ function App() {
           <Scroll />
           <NavMobile />
           <Landscape />
-          <ProjMobile isMobile={isMobile} />
+          <ProjMobile library={library} isMobile={isMobile} />
           <EduMobile isMobile={isMobile} transcript={transcript} />
           <ExpMobile />
           <AboutMe isMobile={isMobile} />
-          <Storage isMobile={isMobile} />
+          <Storage library={library} isMobile={isMobile} />
         </>
       )}
       {/* <Hamburger /> */}

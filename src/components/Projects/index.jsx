@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./Projects.css";
-import library from "../../library";
+
 // import AnimatedCanvas from "../AnimatedCanvas";
 
-export function Projects() {
+export function Projects({ library }) {
   const [selectedProject, setSelectedProject] = useState(null);
   // Dont get confused with library.map
 
   const handleSelectProject = (name) => {
     const projectObject = library.find((proj) => proj.name === name);
+    console.log(projectObject);
     setSelectedProject((current) =>
       name === current?.name ? null : projectObject
     );
@@ -41,7 +42,7 @@ export function Projects() {
   );
 }
 
-export function ProjMobile({ isMobile }) {
+export function ProjMobile({ isMobile, library }) {
   return (
     <section id="projects" className="container">
       {" "}
