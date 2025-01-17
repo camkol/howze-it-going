@@ -61,6 +61,20 @@ section {
       #61dafb 70%
     );
   }
+  .muiSpan {
+    background: radial-gradient(
+      ellipse farthest-corner at center center,
+      #3abdff 0%,
+      #44b4d4 70%
+    );
+  }
+  .tailwindSpan {
+    background: radial-gradient(
+      ellipse farthest-corner at center center,
+      #3abdff 0%,
+      #44b4d4 70%
+    );
+  }
   .reduxSpan {
     background: radial-gradient(
       ellipse farthest-corner at center center,

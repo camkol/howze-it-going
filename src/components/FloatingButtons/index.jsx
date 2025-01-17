@@ -12,7 +12,7 @@
  * @param {array} buttonsList the nav items [{ onClick: click handler, src: 'for the icon'}]
  */
 
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import Toggler from "./components/Toggler";
 import ButtonsList from "./components/ButtonsList";

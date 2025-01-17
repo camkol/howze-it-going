@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import "./App.css";
@@ -83,21 +83,21 @@ function App() {
   return (
     <div className="app">
       {" "}
-      <FloatingButtons
-        buttonsList={buttonsList}
-        buttonType="plus"
-        top={"80%"}
-        left={"90%"}
-        degree={90}
-        distance={-100}
-      />
       {isDesktop && (
         <>
+          {" "}
+          <FloatingButtons
+            buttonsList={buttonsList}
+            buttonType="plus"
+            top={"80%"}
+            left={"90%"}
+            degree={90}
+            distance={-100}
+          />
           <Navigation
             selectedSection={selectedSection}
             onSelectSection={handleSelectSection}
           />
-
           {selectedSection === "Home" && <Landscape />}
           {selectedSection === "Projects" && <Projects library={library} />}
           {selectedSection === "Education" && (
@@ -110,6 +110,15 @@ function App() {
       )}
       {isMobile && (
         <>
+          {" "}
+          <FloatingButtons
+            buttonsList={buttonsList}
+            buttonType="plus"
+            top={"80%"}
+            left={"85%"}
+            degree={90}
+            distance={-100}
+          />
           <Scroll />
           <NavMobile />
           <Landscape />

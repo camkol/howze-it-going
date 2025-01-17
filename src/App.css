@@ -47,6 +47,12 @@ section {
 .progStyle .reactSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #4eb0ca 0%, #61dafb 70%);
 }
+.progStyle .muiSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #3abdff 0%, #44b4d4 70%);
+}
+.progStyle .tailwindSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #3abdff 0%, #44b4d4 70%);
+}
 .progStyle .reduxSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #8800ff 0%, #300177 70%);
 }

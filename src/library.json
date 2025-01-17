@@ -468,6 +468,15 @@
     "gitHub": "https://github.com/camkol/fetching-stuff.git"
   },
   {
+    "name": "Fitness App",
+    "image": "images/projects/comingSoon.jpg",
+    "type": "classPersonal",
+    "star": false,
+    "language": ["react", "mui", "javascript", "html", "css"],
+    "site": "https://fitnessapp1125.netlify.app/",
+    "gitHub": "https://github.com/camkol/fitness-app-react.git"
+  },
+  {
     "name": "Flash Cards",
     "image": "images/projects/comingSoon.jpg",
     "type": "classPersonal",
@@ -982,6 +991,15 @@
     "gitHub": "https://github.com/camkol/Registration_Form.git"
   },
   {
+    "name": "Results Summary Component",
+    "image": "images/projects/comingSoon.jpg",
+    "type": "classPersonal",
+    "star": false,
+    "language": ["react", "javascript", "tailwind", "html", "css"],
+    "site": "https://resultsummarymain.netlify.app/",
+    "gitHub": "https://github.com/camkol/results-summary-component-main.git"
+  },
+  {
     "name": "Rothko Painting",
     "image": "images/projects/rothko.JPG",
     "type": "classPersonal",
@@ -1089,6 +1107,15 @@
     "language": ["react", "javascript", "html", "css"],
     "site": "https://camkol.github.io/socialnetworkforpets--/",
     "gitHub": "https://github.com/camkol/socialnetworkforpets.git"
+  },
+  {
+    "name": "Social Links Profile",
+    "image": "images/projects/comingSoon.jpg",
+    "type": "classPersonal",
+    "star": false,
+    "language": ["tailwind", "html", "css"],
+    "site": "https://camkol.github.io/social-links-profile-main/",
+    "gitHub": "https://github.com/camkol/social-links-profile-main.git"
   },
   {
     "name": "Sole Shoes",

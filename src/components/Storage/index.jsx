@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Scrollbar from "smooth-scrollbar";
 // import OverscrollPlugin from "smooth-scrollbar/plugins/overscroll";
 import $ from "jquery";
@@ -94,6 +94,18 @@ function Project({ project }) {
           return (
             <span key={lang} className="reactSpan">
               React
+            </span>
+          );
+        case "mui":
+          return (
+            <span key={lang} className="muiSpan">
+              MUI
+            </span>
+          );
+        case "tailwind":
+          return (
+            <span key={lang} className="tailwindSpan">
+              Tailwind
             </span>
           );
         case "jquery":

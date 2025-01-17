@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Projects.css";
 
 // import AnimatedCanvas from "../AnimatedCanvas";
@@ -75,6 +75,18 @@ function Project({ project, onSelectProject, isMobile }) {
           return (
             <span key={lang} className="reactSpan">
               React
+            </span>
+          );
+        case "mui":
+          return (
+            <span key={lang} className="muiSpan">
+              MUI
+            </span>
+          );
+        case "tailwind":
+          return (
+            <span key={lang} className="tailwindSpan">
+              Tailwind
             </span>
           );
         case "jquery":
